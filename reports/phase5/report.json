@@ -1,0 +1,38 @@
+{
+  "phase": "5",
+  "status": "complete",
+  "comparison_version": "pair-evidence-v0.1",
+  "inputs": {
+    "phase3_records_sha256": "3bd32b39984fbc3606f93d10b689301e6529595350c5e98a2bdd2b16a6213023",
+    "phase4_candidates_sha256": "86349c51acb9e4facb19317a3c41912cc25ac6af67ad8c88c596056eac863ecd"
+  },
+  "source_records": 9245,
+  "phase4_query_records": 9245,
+  "queries_with_pairs": 9155,
+  "pair_results": 89381,
+  "outcome_rule_counts": {
+    "conflict": 6804,
+    "exact_duplicate": 4476,
+    "near_duplicate": 3352,
+    "no_match": 64220,
+    "possible_functional_equivalent": 10529
+  },
+  "review_required_rule_count": 25161,
+  "identity_merge_blocked_rule_count": 81553,
+  "runtime_seconds": 12.595633,
+  "named_example_checks": {
+    "passed": 7,
+    "total": 7,
+    "scope": "Rule-output checks on named examples; not accuracy metrics."
+  },
+  "automatic_merges": 0,
+  "common_codes_assigned": 0,
+  "limitations": [
+    "Outcomes are deterministic rule outputs, not measured accuracy or engineering validation.",
+    "Possible functional equivalent is only a suggestion for a qualified reviewer.",
+    "Missing evidence remains unknown and may require review.",
+    "Dimension roles can be ambiguous when source text gives unlabelled measurements.",
+    "Pressure Class, PN and physical pressure use different bases and are not equated.",
+    "The repository has a Python/CLI interface but no backend service or comparison-workspace screen."
+  ]
+}

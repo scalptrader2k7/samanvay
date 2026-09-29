@@ -1,0 +1,211 @@
+{
+  "items": [
+    {
+      "proposed_code": "SMV-P-B0CE172DAB9E",
+      "prototype_status": "prototype_proposed",
+      "member_fingerprint": "719fd2f6d6b608289909dc43b0d024a85e504ee5f370d1841fdb3899b8a2c8b2",
+      "standard_description": "FAMILY=pipe | SIZE_DIMENSION=125NB, 141.3MM, 9.53MM | MATERIAL_GRADE=UNKNOWN | STANDARD=ASTM A312 | PRESSURE=UNKNOWN | VOLTAGE=UNKNOWN | MODEL_PART=UNKNOWN",
+      "readable_description": "Pipe; dimensions/specification values 125NB, 141.3MM, 9.53MM; standard ASTM A312. Unknown: material grade, pressure designation, voltage, model/part.",
+      "active": 1,
+      "created_at": "2026-09-29T21:12:34.723358Z",
+      "updated_at": "2026-09-29T21:12:34.723358Z",
+      "description_evidence": {
+        "fields": {
+          "family": {
+            "evidence": [
+              {
+                "end": 6,
+                "rule_id": "family.pipe.explicit",
+                "source_record_id": "M000753",
+                "start": 2,
+                "value_normalized": "pipe",
+                "value_raw": "PIPE"
+              },
+              {
+                "end": 4,
+                "rule_id": "family.pipe.explicit",
+                "source_record_id": "M000925",
+                "start": 0,
+                "value_normalized": "pipe",
+                "value_raw": "Pipe"
+              }
+            ],
+            "status": "supported",
+            "values": [
+              "pipe"
+            ]
+          },
+          "material_grade": {
+            "evidence": [],
+            "observed_by_source": {
+              "M000753": [],
+              "M000925": []
+            },
+            "status": "unknown",
+            "values": []
+          },
+          "model_part": {
+            "evidence": [],
+            "observed_by_source": {
+              "M000753": [],
+              "M000925": []
+            },
+            "status": "unknown",
+            "values": []
+          },
+          "pressure": {
+            "evidence": [],
+            "observed_by_source": {
+              "M000753": [],
+              "M000925": []
+            },
+            "status": "unknown",
+            "values": []
+          },
+          "size_dimension": {
+            "evidence": [
+              {
+                "end": 23,
+                "rule_id": "size.metric",
+                "source_record_id": "M000753",
+                "start": 17,
+                "value_normalized": "9.53MM",
+                "value_raw": "9.53MM"
+              },
+              {
+                "end": 31,
+                "rule_id": "size.metric",
+                "source_record_id": "M000753",
+                "start": 24,
+                "value_normalized": "141.3MM",
+                "value_raw": "141.3MM"
+              },
+              {
+                "end": 37,
+                "rule_id": "size.nominal",
+                "source_record_id": "M000753",
+                "start": 32,
+                "value_normalized": "125NB",
+                "value_raw": "125NB"
+              },
+              {
+                "end": 21,
+                "rule_id": "size.metric",
+                "source_record_id": "M000925",
+                "start": 15,
+                "value_normalized": "9.53MM",
+                "value_raw": "9.53mm"
+              },
+              {
+                "end": 29,
+                "rule_id": "size.metric",
+                "source_record_id": "M000925",
+                "start": 22,
+                "value_normalized": "141.3MM",
+                "value_raw": "141.3mm"
+              },
+              {
+                "end": 35,
+                "rule_id": "size.nominal",
+                "source_record_id": "M000925",
+                "start": 30,
+                "value_normalized": "125NB",
+                "value_raw": "125nb"
+              }
+            ],
+            "observed_by_source": {
+              "M000753": [
+                "125NB",
+                "141.3MM",
+                "9.53MM"
+              ],
+              "M000925": [
+                "125NB",
+                "141.3MM",
+                "9.53MM"
+              ]
+            },
+            "status": "supported",
+            "values": [
+              "125NB",
+              "141.3MM",
+              "9.53MM"
+            ]
+          },
+          "standard": {
+            "evidence": [
+              {
+                "end": 16,
+                "rule_id": "standard.astm",
+                "source_record_id": "M000753",
+                "start": 7,
+                "value_normalized": "ASTM A312",
+                "value_raw": "ASTM A312"
+              },
+              {
+                "end": 14,
+                "rule_id": "standard.astm",
+                "source_record_id": "M000925",
+                "start": 5,
+                "value_normalized": "ASTM A312",
+                "value_raw": "Astm A312"
+              }
+            ],
+            "observed_by_source": {
+              "M000753": [
+                "ASTM A312"
+              ],
+              "M000925": [
+                "ASTM A312"
+              ]
+            },
+            "status": "supported",
+            "values": [
+              "ASTM A312"
+            ]
+          },
+          "voltage": {
+            "evidence": [],
+            "observed_by_source": {
+              "M000753": [],
+              "M000925": []
+            },
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "registry_version": "prototype-registry-v0.1"
+      },
+      "members": [
+        {
+          "source_record_id": "M000753",
+          "membership_status": "active",
+          "organization": "NTPC Limited",
+          "original_description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+          "source_identifiers": {
+            "corpus_id": "M000753",
+            "tender_id": "28971",
+            "tender_reference": ""
+          },
+          "genuine_material_codes": {}
+        },
+        {
+          "source_record_id": "M000925",
+          "membership_status": "active",
+          "organization": "NTPC Limited",
+          "original_description": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+          "source_identifiers": {
+            "corpus_id": "M000925",
+            "tender_id": "28971",
+            "tender_reference": ""
+          },
+          "genuine_material_codes": {}
+        }
+      ]
+    }
+  ],
+  "offset": 0,
+  "limit": 10,
+  "total": 1,
+  "next_offset": null
+}

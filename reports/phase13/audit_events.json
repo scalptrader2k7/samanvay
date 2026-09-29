@@ -1,0 +1,206 @@
+{
+  "items": [
+    {
+      "event_id": 1,
+      "workspace_id": "phase13-demo",
+      "event_type": "decision_created",
+      "action": "approve",
+      "relationship_type": "identity",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 local demo approval using displayed matching pipe evidence",
+      "decision_id": 1,
+      "created_at": "2026-09-29T21:12:34.724592Z",
+      "affected_source_ids": [
+        "M000753",
+        "M000925"
+      ],
+      "input_versions": [
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000753",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        },
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000925",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        }
+      ],
+      "rule_versions": {
+        "attribute_parser_versions": [
+          "technical-attributes-v0.1"
+        ],
+        "model_version": null,
+        "normalization_versions": [
+          "description-normalization-v0.1"
+        ],
+        "pair_evidence_version": "pair-evidence-v0.2",
+        "registry_version": "prototype-registry-v0.1"
+      },
+      "previous_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": null,
+            "status": "unresolved"
+          },
+          "M000925": {
+            "proposed_code": null,
+            "status": "unresolved"
+          }
+        }
+      },
+      "resulting_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          },
+          "M000925": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          }
+        }
+      }
+    },
+    {
+      "event_id": 2,
+      "workspace_id": "phase13-demo",
+      "event_type": "decision_reconsidered",
+      "action": "defer",
+      "relationship_type": "identity",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo of reversible governance history",
+      "decision_id": 2,
+      "created_at": "2026-09-29T21:12:34.753843Z",
+      "affected_source_ids": [
+        "M000753",
+        "M000925"
+      ],
+      "input_versions": [
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000753",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        },
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000925",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        }
+      ],
+      "rule_versions": {
+        "attribute_parser_versions": [
+          "technical-attributes-v0.1"
+        ],
+        "model_version": null,
+        "normalization_versions": [
+          "description-normalization-v0.1"
+        ],
+        "pair_evidence_version": "pair-evidence-v0.2",
+        "registry_version": "prototype-registry-v0.1"
+      },
+      "previous_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          },
+          "M000925": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          }
+        }
+      },
+      "resulting_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": null,
+            "status": "unresolved"
+          },
+          "M000925": {
+            "proposed_code": null,
+            "status": "unresolved"
+          }
+        }
+      }
+    },
+    {
+      "event_id": 3,
+      "workspace_id": "phase13-demo",
+      "event_type": "decision_reconsidered",
+      "action": "approve",
+      "relationship_type": "identity",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo restores the supported prototype mapping",
+      "decision_id": 3,
+      "created_at": "2026-09-29T21:12:34.779402Z",
+      "affected_source_ids": [
+        "M000753",
+        "M000925"
+      ],
+      "input_versions": [
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000753",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        },
+        {
+          "mapping_id": "material-candidates-v0.1",
+          "schema_version": "0.1",
+          "source_record_id": "M000925",
+          "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+        }
+      ],
+      "rule_versions": {
+        "attribute_parser_versions": [
+          "technical-attributes-v0.1"
+        ],
+        "model_version": null,
+        "normalization_versions": [
+          "description-normalization-v0.1"
+        ],
+        "pair_evidence_version": "pair-evidence-v0.2",
+        "registry_version": "prototype-registry-v0.1"
+      },
+      "previous_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": null,
+            "status": "unresolved"
+          },
+          "M000925": {
+            "proposed_code": null,
+            "status": "unresolved"
+          }
+        }
+      },
+      "resulting_state": {
+        "functional_relationships": [],
+        "mappings": {
+          "M000753": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          },
+          "M000925": {
+            "proposed_code": "SMV-P-B0CE172DAB9E",
+            "status": "mapped_to_prototype"
+          }
+        }
+      }
+    }
+  ],
+  "offset": 0,
+  "limit": 20,
+  "total": 3,
+  "next_offset": null
+}

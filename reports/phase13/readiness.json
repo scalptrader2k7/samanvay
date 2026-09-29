@@ -1,0 +1,8 @@
+{
+  "status": "ready",
+  "storage": {
+    "backend": "sqlite-local",
+    "available": true,
+    "durable_for_deployment": false
+  }
+}

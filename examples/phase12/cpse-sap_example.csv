@@ -1,0 +1,3 @@
+Company,External Row ID,Material Code,Short Text,Base UOM,Material Group,Standard Supplied,Grade Supplied,Size or Dimension Supplied,Pressure Rating Supplied,Voltage Rating Supplied,Model or Part Supplied,Source System,Plant,Document Reference,Unmapped Sponsor Note
+NTPC Limited,M000753,,", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",,,,,,,,,SAP-shaped demonstration,,,retained raw example
+NTPC Limited,M000925,,"Pipe Astm A312,9.53mm,141.3mm,125nb",,,,,,,,,SAP-shaped demonstration,,,retained raw example

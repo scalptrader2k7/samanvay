@@ -69,6 +69,38 @@ def load_mapped_csv(path, mapping, *, import_root=None):
                      mapping.get("specifications", []), mapping.get("legacy_code_evidence"))
 
 
+def map_source_rows(rows, headers, mapping, *, source_file, source_sha256):
+    """Map already-decoded source rows using the same canonical Phase 2 rules."""
+    validate_mapping(mapping)
+    if (not isinstance(headers, (list, tuple)) or not headers or
+            any(not isinstance(value, str) or not value.strip() for value in headers) or
+            len(headers) != len(set(headers))):
+        raise ValueError("headers must contain distinct nonblank strings")
+    if not isinstance(source_file, str) or not source_file.strip():
+        raise ValueError("source_file must be nonblank")
+    if (not isinstance(source_sha256, str) or len(source_sha256) != 64 or
+            any(value not in "0123456789abcdef" for value in source_sha256.lower())):
+        raise ValueError("source_sha256 must be a SHA-256 hex digest")
+    needed = (set(mapping["columns"].values()) | set(mapping.get("identifiers", [])) |
+              set(mapping.get("specifications", [])))
+    missing = needed - set(headers)
+    if missing:
+        raise ValueError(f"{source_file}: missing mapped columns: {', '.join(sorted(missing))}")
+    clean_rows = []
+    for index, row in enumerate(rows, 1):
+        if not isinstance(row, dict) or set(row) != set(headers):
+            raise ValueError(f"{source_file}: data record {index}: columns do not match headers")
+        if any(not isinstance(row[header], str) for header in headers):
+            raise ValueError(f"{source_file}: data record {index}: every source value must be text")
+        clean_rows.append({header: row[header] for header in headers})
+    constant = mapping.get("organization_constant")
+    return _map_rows(clean_rows, source_file, source_sha256, mapping["columns"],
+                     mapping.get("identifiers", []), mapping["mapping_id"],
+                     (constant["value"], constant["evidence"]) if constant else None,
+                     mapping.get("specifications", []),
+                     mapping.get("legacy_code_evidence"))
+
+
 def read_mapping(path):
     """Read a JSON mapping, rejecting duplicate keys rather than overwriting them."""
     def unique(pairs):

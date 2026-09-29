@@ -1,0 +1,12 @@
+{
+  "registry_version": "prototype-registry-v0.1",
+  "prototype_status": "prototype_proposed",
+  "source_records": 9245,
+  "mapped_records": 2,
+  "unresolved_records": 9243,
+  "records_missing_genuine_material_code": 9245,
+  "active_prototype_codes": 1,
+  "functional_relationships": 1,
+  "conflicts_and_warnings": 12,
+  "storage_boundary": "SQLite local development only; Phase 8 requires durable mounted or managed storage."
+}

@@ -1,0 +1,178 @@
+{
+  "items": [
+    {
+      "source_record_id": "M000001",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1236/1231",
+      "source_identifiers": {
+        "corpus_id": "M000001",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000002",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "14.2 Kg Cylinders (Including New & Replacement)",
+      "source_identifiers": {
+        "corpus_id": "M000002",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000003",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1415/1417/1418",
+      "source_identifiers": {
+        "corpus_id": "M000003",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000004",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1507/1534",
+      "source_identifiers": {
+        "corpus_id": "M000004",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000005",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1599+3001/1543+460 1",
+      "source_identifiers": {
+        "corpus_id": "M000005",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000006",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1599+3001/1543+4601",
+      "source_identifiers": {
+        "corpus_id": "M000006",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000007",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1599/1613",
+      "source_identifiers": {
+        "corpus_id": "M000007",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000008",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1617/1585+1621",
+      "source_identifiers": {
+        "corpus_id": "M000008",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000009",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1617/1772+4574",
+      "source_identifiers": {
+        "corpus_id": "M000009",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    },
+    {
+      "source_record_id": "M000010",
+      "source_record_id_role": "internal_row_locator_not_official_material_code",
+      "source_organization": "Indian Oil Corporation Limited",
+      "original_description": "1666/1756",
+      "source_identifiers": {
+        "corpus_id": "M000010",
+        "tender_id": "",
+        "tender_reference": ""
+      },
+      "genuine_material_codes": {},
+      "missing_genuine_material_code": true,
+      "mapping_status": "unresolved",
+      "proposed_samanvay_code": null,
+      "prototype_status": null,
+      "review_warnings": []
+    }
+  ],
+  "offset": 0,
+  "limit": 10,
+  "total": 9245,
+  "next_offset": 10
+}

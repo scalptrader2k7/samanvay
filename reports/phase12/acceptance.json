@@ -1,0 +1,130 @@
+{
+  "full_candidate_snapshot": {
+    "contract_version": "samanvay-integration-v0.1",
+    "mapping_id": "material-candidates-v0.1",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "input_rows": 9245,
+    "canonical_records": 9245,
+    "matching_ready_records": 9245,
+    "ineligible_records": 0,
+    "mapped_source_columns": [
+      "corpus_id",
+      "description",
+      "document_url",
+      "organization",
+      "product_category",
+      "quantity",
+      "source_url",
+      "tender_id",
+      "tender_reference",
+      "unit"
+    ],
+    "unmapped_source_columns": [
+      "description_kind",
+      "item_type_hint",
+      "location",
+      "major_item_category",
+      "has_size_or_dimension",
+      "has_material_grade",
+      "has_engineering_standard",
+      "has_voltage_or_electrical_rating",
+      "has_pressure_class_or_rating",
+      "has_model_or_catalog_number",
+      "has_any_technical_details",
+      "classification_reason",
+      "provisional_status"
+    ],
+    "issue_counts": [
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 4163
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 7114
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning",
+        "count": 9245
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 8771
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 8261
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 907
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning",
+        "count": 9245
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning",
+        "count": 9245
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 907
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning",
+        "count": 9245
+      },
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning",
+        "count": 8854
+      }
+    ],
+    "transformations": [
+      "identity text mapping",
+      "blank-to-null with issue",
+      "existing Phase 3 description derivation for eligible rows"
+    ],
+    "matching_core_changed": false,
+    "erp_writes": false
+  },
+  "full_source_ids_unique": 9245,
+  "example_schemas": [
+    "public",
+    "cpse-sap"
+  ],
+  "same_matching_core": true,
+  "retrieval_top_candidate": "M000925",
+  "pair_outcome": "near_duplicate",
+  "source_ids": [
+    "M000753",
+    "M000925"
+  ],
+  "descriptions": [
+    ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+    "Pipe Astm A312,9.53mm,141.3mm,125nb"
+  ],
+  "erp_writes": false
+}

@@ -1,0 +1,21 @@
+{
+  "phase": "7",
+  "status": "complete",
+  "registry_version": "prototype-registry-v0.1",
+  "demonstration_only": true,
+  "evaluation_labels_created": 0,
+  "source_records_imported": 9245,
+  "phase6_warnings_imported": 10,
+  "stable_repeat_code_check": true,
+  "example_proposed_code": "SMV-P-3AC6BF90CBF0",
+  "prototype_status": "prototype_proposed",
+  "example_members": 2,
+  "decisions": 6,
+  "identity_rejections": 2,
+  "identity_deferrals": 1,
+  "functional_relationships": 1,
+  "mapped_records": 2,
+  "unresolved_records": 9243,
+  "records_missing_genuine_material_code": 9245,
+  "storage_requirement": "Phase 8 must use durable mounted storage or a managed transactional database; do not rely on an ephemeral server filesystem."
+}

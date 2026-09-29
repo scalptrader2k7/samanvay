@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "read_only_erp_boundary": true,
+  "artifacts": {
+    "canonical_records.jsonl": "1e4479ba391d0acb79de6e638fbb57d5bae799e3e5c2b9a3495137269923df02",
+    "mapping.json": "170adbc903f749055c320e7f24a10da93e87b6002bf5bf22e1fc21d82d1ae5e2",
+    "matching_records.jsonl": "dded6c0700d2d88d46d1150084ff49fdcb9aaf7535f552f3d7b0c63d8ff4f821",
+    "validation.json": "98bf3c3f684b71b73c684e50673898f9830000137fa467950e920c30bf1dd3c0"
+  }
+}

@@ -1,0 +1,1736 @@
+[
+  {
+    "report": {
+      "contract_version": "samanvay-integration-v0.1",
+      "mapping_id": "phase12-public-example-v0.1",
+      "source_sha256": "90181fb84c15478dec56c36c104e412ba5acdb0dba96a79c07d739ca9a7c73b2",
+      "input_rows": 2,
+      "canonical_records": 2,
+      "matching_ready_records": 2,
+      "ineligible_records": 0,
+      "mapped_source_columns": [
+        "corpus_id",
+        "description",
+        "document_url",
+        "organization",
+        "product_category",
+        "tender_id",
+        "unit"
+      ],
+      "unmapped_source_columns": [
+        "unmapped_note"
+      ],
+      "issue_counts": [
+        {
+          "field": "category_original",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "document_reference",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "legacy_material_code",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "quantity_original",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "source_section",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "source_system",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "source_url",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "uom_original",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        }
+      ],
+      "transformations": [
+        "identity text mapping",
+        "blank-to-null with issue",
+        "existing Phase 3 description derivation for eligible rows"
+      ],
+      "matching_core_changed": false,
+      "erp_writes": false
+    },
+    "canonical_records": [
+      {
+        "schema_version": "0.1",
+        "source_file": "public_example.csv",
+        "source_sha256": "90181fb84c15478dec56c36c104e412ba5acdb0dba96a79c07d739ca9a7c73b2",
+        "source_sheet": null,
+        "source_row": 1,
+        "mapping_id": "phase12-public-example-v0.1",
+        "raw_fields": {
+          "organization": "NTPC Limited",
+          "corpus_id": "M000753",
+          "description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+          "unit": "",
+          "product_category": "",
+          "document_url": "",
+          "tender_id": "28971",
+          "unmapped_note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "organization"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "corpus_id"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "description"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "unit"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "product_category"
+          },
+          "source_system": {
+            "kind": "unmapped"
+          },
+          "source_section": {
+            "kind": "unmapped"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "document_url"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "unmapped"
+          },
+          "source_identifiers": {
+            "corpus_id": {
+              "kind": "column",
+              "name": "corpus_id"
+            },
+            "tender_id": {
+              "kind": "column",
+              "name": "tender_id"
+            }
+          },
+          "specifications_original": {
+            "kind": "unmapped"
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_system",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000753",
+        "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": null,
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "corpus_id": "M000753",
+          "tender_id": "28971"
+        },
+        "specifications_original": {},
+        "eligible_for_processing": true
+      },
+      {
+        "schema_version": "0.1",
+        "source_file": "public_example.csv",
+        "source_sha256": "90181fb84c15478dec56c36c104e412ba5acdb0dba96a79c07d739ca9a7c73b2",
+        "source_sheet": null,
+        "source_row": 2,
+        "mapping_id": "phase12-public-example-v0.1",
+        "raw_fields": {
+          "organization": "NTPC Limited",
+          "corpus_id": "M000925",
+          "description": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+          "unit": "",
+          "product_category": "",
+          "document_url": "",
+          "tender_id": "28971",
+          "unmapped_note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "organization"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "corpus_id"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "description"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "unit"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "product_category"
+          },
+          "source_system": {
+            "kind": "unmapped"
+          },
+          "source_section": {
+            "kind": "unmapped"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "document_url"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "unmapped"
+          },
+          "source_identifiers": {
+            "corpus_id": {
+              "kind": "column",
+              "name": "corpus_id"
+            },
+            "tender_id": {
+              "kind": "column",
+              "name": "tender_id"
+            }
+          },
+          "specifications_original": {
+            "kind": "unmapped"
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_system",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000925",
+        "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": null,
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "corpus_id": "M000925",
+          "tender_id": "28971"
+        },
+        "specifications_original": {},
+        "eligible_for_processing": true
+      }
+    ],
+    "matching_records": [
+      {
+        "schema_version": "0.1",
+        "source_file": "public_example.csv",
+        "source_sha256": "90181fb84c15478dec56c36c104e412ba5acdb0dba96a79c07d739ca9a7c73b2",
+        "source_sheet": null,
+        "source_row": 1,
+        "mapping_id": "phase12-public-example-v0.1",
+        "raw_fields": {
+          "organization": "NTPC Limited",
+          "corpus_id": "M000753",
+          "description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+          "unit": "",
+          "product_category": "",
+          "document_url": "",
+          "tender_id": "28971",
+          "unmapped_note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "organization"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "corpus_id"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "description"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "unit"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "product_category"
+          },
+          "source_system": {
+            "kind": "unmapped"
+          },
+          "source_section": {
+            "kind": "unmapped"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "document_url"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "unmapped"
+          },
+          "source_identifiers": {
+            "corpus_id": {
+              "kind": "column",
+              "name": "corpus_id"
+            },
+            "tender_id": {
+              "kind": "column",
+              "name": "tender_id"
+            }
+          },
+          "specifications_original": {
+            "kind": "unmapped"
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_system",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000753",
+        "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": null,
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "corpus_id": "M000753",
+          "tender_id": "28971"
+        },
+        "specifications_original": {},
+        "eligible_for_processing": true,
+        "normalization_version": "description-normalization-v0.1",
+        "description_normalized": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+        "family": "pipe",
+        "family_evidence": {
+          "value_raw": "PIPE",
+          "value_normalized": "pipe",
+          "start": 2,
+          "end": 6,
+          "rule_id": "family.pipe.explicit"
+        },
+        "attributes": {
+          "size_dimension": [
+            {
+              "value_raw": "9.53MM",
+              "value_normalized": "9.53MM",
+              "start": 17,
+              "end": 23,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "141.3MM",
+              "value_normalized": "141.3MM",
+              "start": 24,
+              "end": 31,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "125NB",
+              "value_normalized": "125NB",
+              "start": 32,
+              "end": 37,
+              "rule_id": "size.nominal"
+            }
+          ],
+          "material_grade": [],
+          "standard": [
+            {
+              "value_raw": "ASTM A312",
+              "value_normalized": "ASTM A312",
+              "start": 7,
+              "end": 16,
+              "rule_id": "standard.astm"
+            }
+          ],
+          "pressure": [],
+          "voltage": [],
+          "model_part": []
+        },
+        "derivation_issues": [],
+        "attribute_parser_version": "technical-attributes-v0.1"
+      },
+      {
+        "schema_version": "0.1",
+        "source_file": "public_example.csv",
+        "source_sha256": "90181fb84c15478dec56c36c104e412ba5acdb0dba96a79c07d739ca9a7c73b2",
+        "source_sheet": null,
+        "source_row": 2,
+        "mapping_id": "phase12-public-example-v0.1",
+        "raw_fields": {
+          "organization": "NTPC Limited",
+          "corpus_id": "M000925",
+          "description": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+          "unit": "",
+          "product_category": "",
+          "document_url": "",
+          "tender_id": "28971",
+          "unmapped_note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "organization"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "corpus_id"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "description"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "unit"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "product_category"
+          },
+          "source_system": {
+            "kind": "unmapped"
+          },
+          "source_section": {
+            "kind": "unmapped"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "document_url"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "unmapped"
+          },
+          "source_identifiers": {
+            "corpus_id": {
+              "kind": "column",
+              "name": "corpus_id"
+            },
+            "tender_id": {
+              "kind": "column",
+              "name": "tender_id"
+            }
+          },
+          "specifications_original": {
+            "kind": "unmapped"
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_system",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000925",
+        "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": null,
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "corpus_id": "M000925",
+          "tender_id": "28971"
+        },
+        "specifications_original": {},
+        "eligible_for_processing": true,
+        "normalization_version": "description-normalization-v0.1",
+        "description_normalized": "Pipe Astm A312, 9.53mm, 141.3mm, 125nb",
+        "family": "pipe",
+        "family_evidence": {
+          "value_raw": "Pipe",
+          "value_normalized": "pipe",
+          "start": 0,
+          "end": 4,
+          "rule_id": "family.pipe.explicit"
+        },
+        "attributes": {
+          "size_dimension": [
+            {
+              "value_raw": "9.53mm",
+              "value_normalized": "9.53MM",
+              "start": 15,
+              "end": 21,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "141.3mm",
+              "value_normalized": "141.3MM",
+              "start": 22,
+              "end": 29,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "125nb",
+              "value_normalized": "125NB",
+              "start": 30,
+              "end": 35,
+              "rule_id": "size.nominal"
+            }
+          ],
+          "material_grade": [],
+          "standard": [
+            {
+              "value_raw": "Astm A312",
+              "value_normalized": "ASTM A312",
+              "start": 5,
+              "end": 14,
+              "rule_id": "standard.astm"
+            }
+          ],
+          "pressure": [],
+          "voltage": [],
+          "model_part": []
+        },
+        "derivation_issues": [],
+        "attribute_parser_version": "technical-attributes-v0.1"
+      }
+    ],
+    "persisted": false,
+    "erp_writes": false,
+    "next_step": "An authenticated administrator may load a validated adapter pack with the offline seeding utility."
+  },
+  {
+    "report": {
+      "contract_version": "samanvay-integration-v0.1",
+      "mapping_id": "phase12-cpse-sap-example-v0.1",
+      "source_sha256": "c0e2b9b5a0efc395ef6b378f18db233941b5d68dd84676e4c2b773c22700318f",
+      "input_rows": 2,
+      "canonical_records": 2,
+      "matching_ready_records": 2,
+      "ineligible_records": 0,
+      "mapped_source_columns": [
+        "Base UOM",
+        "Company",
+        "Document Reference",
+        "External Row ID",
+        "Grade Supplied",
+        "Material Code",
+        "Material Group",
+        "Model or Part Supplied",
+        "Plant",
+        "Pressure Rating Supplied",
+        "Short Text",
+        "Size or Dimension Supplied",
+        "Source System",
+        "Standard Supplied",
+        "Voltage Rating Supplied"
+      ],
+      "unmapped_source_columns": [
+        "Unmapped Sponsor Note"
+      ],
+      "issue_counts": [
+        {
+          "field": "category_original",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "document_reference",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "legacy_material_code",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "quantity_original",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "source_section",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "source_url",
+          "reason": "unmapped",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Grade Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Model or Part Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Pressure Rating Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Size or Dimension Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Standard Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "specifications_original.Voltage Rating Supplied",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        },
+        {
+          "field": "uom_original",
+          "reason": "blank",
+          "severity": "warning",
+          "count": 2
+        }
+      ],
+      "transformations": [
+        "identity text mapping",
+        "blank-to-null with issue",
+        "existing Phase 3 description derivation for eligible rows"
+      ],
+      "matching_core_changed": false,
+      "erp_writes": false
+    },
+    "canonical_records": [
+      {
+        "schema_version": "0.1",
+        "source_file": "cpse-sap_example.csv",
+        "source_sha256": "c0e2b9b5a0efc395ef6b378f18db233941b5d68dd84676e4c2b773c22700318f",
+        "source_sheet": null,
+        "source_row": 1,
+        "mapping_id": "phase12-cpse-sap-example-v0.1",
+        "raw_fields": {
+          "Company": "NTPC Limited",
+          "External Row ID": "M000753",
+          "Material Code": "",
+          "Short Text": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+          "Base UOM": "",
+          "Material Group": "",
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": "",
+          "Source System": "SAP-shaped demonstration",
+          "Plant": "",
+          "Document Reference": "",
+          "Unmapped Sponsor Note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "Company"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "External Row ID"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "Short Text"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "Base UOM"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "Material Group"
+          },
+          "source_system": {
+            "kind": "column",
+            "name": "Source System"
+          },
+          "source_section": {
+            "kind": "column",
+            "name": "Plant"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "Document Reference"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "column",
+            "name": "Material Code",
+            "evidence": "Material Code is mapped only when supplied by the source organization; blank remains missing."
+          },
+          "source_identifiers": {
+            "External Row ID": {
+              "kind": "column",
+              "name": "External Row ID"
+            }
+          },
+          "specifications_original": {
+            "Standard Supplied": {
+              "kind": "column",
+              "name": "Standard Supplied"
+            },
+            "Grade Supplied": {
+              "kind": "column",
+              "name": "Grade Supplied"
+            },
+            "Size or Dimension Supplied": {
+              "kind": "column",
+              "name": "Size or Dimension Supplied"
+            },
+            "Pressure Rating Supplied": {
+              "kind": "column",
+              "name": "Pressure Rating Supplied"
+            },
+            "Voltage Rating Supplied": {
+              "kind": "column",
+              "name": "Voltage Rating Supplied"
+            },
+            "Model or Part Supplied": {
+              "kind": "column",
+              "name": "Model or Part Supplied"
+            }
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Standard Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Grade Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Size or Dimension Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Pressure Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Voltage Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Model or Part Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000753",
+        "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": "SAP-shaped demonstration",
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "External Row ID": "M000753"
+        },
+        "specifications_original": {
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": ""
+        },
+        "eligible_for_processing": true
+      },
+      {
+        "schema_version": "0.1",
+        "source_file": "cpse-sap_example.csv",
+        "source_sha256": "c0e2b9b5a0efc395ef6b378f18db233941b5d68dd84676e4c2b773c22700318f",
+        "source_sheet": null,
+        "source_row": 2,
+        "mapping_id": "phase12-cpse-sap-example-v0.1",
+        "raw_fields": {
+          "Company": "NTPC Limited",
+          "External Row ID": "M000925",
+          "Material Code": "",
+          "Short Text": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+          "Base UOM": "",
+          "Material Group": "",
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": "",
+          "Source System": "SAP-shaped demonstration",
+          "Plant": "",
+          "Document Reference": "",
+          "Unmapped Sponsor Note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "Company"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "External Row ID"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "Short Text"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "Base UOM"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "Material Group"
+          },
+          "source_system": {
+            "kind": "column",
+            "name": "Source System"
+          },
+          "source_section": {
+            "kind": "column",
+            "name": "Plant"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "Document Reference"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "column",
+            "name": "Material Code",
+            "evidence": "Material Code is mapped only when supplied by the source organization; blank remains missing."
+          },
+          "source_identifiers": {
+            "External Row ID": {
+              "kind": "column",
+              "name": "External Row ID"
+            }
+          },
+          "specifications_original": {
+            "Standard Supplied": {
+              "kind": "column",
+              "name": "Standard Supplied"
+            },
+            "Grade Supplied": {
+              "kind": "column",
+              "name": "Grade Supplied"
+            },
+            "Size or Dimension Supplied": {
+              "kind": "column",
+              "name": "Size or Dimension Supplied"
+            },
+            "Pressure Rating Supplied": {
+              "kind": "column",
+              "name": "Pressure Rating Supplied"
+            },
+            "Voltage Rating Supplied": {
+              "kind": "column",
+              "name": "Voltage Rating Supplied"
+            },
+            "Model or Part Supplied": {
+              "kind": "column",
+              "name": "Model or Part Supplied"
+            }
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Standard Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Grade Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Size or Dimension Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Pressure Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Voltage Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Model or Part Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000925",
+        "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": "SAP-shaped demonstration",
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "External Row ID": "M000925"
+        },
+        "specifications_original": {
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": ""
+        },
+        "eligible_for_processing": true
+      }
+    ],
+    "matching_records": [
+      {
+        "schema_version": "0.1",
+        "source_file": "cpse-sap_example.csv",
+        "source_sha256": "c0e2b9b5a0efc395ef6b378f18db233941b5d68dd84676e4c2b773c22700318f",
+        "source_sheet": null,
+        "source_row": 1,
+        "mapping_id": "phase12-cpse-sap-example-v0.1",
+        "raw_fields": {
+          "Company": "NTPC Limited",
+          "External Row ID": "M000753",
+          "Material Code": "",
+          "Short Text": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+          "Base UOM": "",
+          "Material Group": "",
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": "",
+          "Source System": "SAP-shaped demonstration",
+          "Plant": "",
+          "Document Reference": "",
+          "Unmapped Sponsor Note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "Company"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "External Row ID"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "Short Text"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "Base UOM"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "Material Group"
+          },
+          "source_system": {
+            "kind": "column",
+            "name": "Source System"
+          },
+          "source_section": {
+            "kind": "column",
+            "name": "Plant"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "Document Reference"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "column",
+            "name": "Material Code",
+            "evidence": "Material Code is mapped only when supplied by the source organization; blank remains missing."
+          },
+          "source_identifiers": {
+            "External Row ID": {
+              "kind": "column",
+              "name": "External Row ID"
+            }
+          },
+          "specifications_original": {
+            "Standard Supplied": {
+              "kind": "column",
+              "name": "Standard Supplied"
+            },
+            "Grade Supplied": {
+              "kind": "column",
+              "name": "Grade Supplied"
+            },
+            "Size or Dimension Supplied": {
+              "kind": "column",
+              "name": "Size or Dimension Supplied"
+            },
+            "Pressure Rating Supplied": {
+              "kind": "column",
+              "name": "Pressure Rating Supplied"
+            },
+            "Voltage Rating Supplied": {
+              "kind": "column",
+              "name": "Voltage Rating Supplied"
+            },
+            "Model or Part Supplied": {
+              "kind": "column",
+              "name": "Model or Part Supplied"
+            }
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Standard Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Grade Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Size or Dimension Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Pressure Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Voltage Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Model or Part Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000753",
+        "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": "SAP-shaped demonstration",
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "External Row ID": "M000753"
+        },
+        "specifications_original": {
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": ""
+        },
+        "eligible_for_processing": true,
+        "normalization_version": "description-normalization-v0.1",
+        "description_normalized": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+        "family": "pipe",
+        "family_evidence": {
+          "value_raw": "PIPE",
+          "value_normalized": "pipe",
+          "start": 2,
+          "end": 6,
+          "rule_id": "family.pipe.explicit"
+        },
+        "attributes": {
+          "size_dimension": [
+            {
+              "value_raw": "9.53MM",
+              "value_normalized": "9.53MM",
+              "start": 17,
+              "end": 23,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "141.3MM",
+              "value_normalized": "141.3MM",
+              "start": 24,
+              "end": 31,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "125NB",
+              "value_normalized": "125NB",
+              "start": 32,
+              "end": 37,
+              "rule_id": "size.nominal"
+            }
+          ],
+          "material_grade": [],
+          "standard": [
+            {
+              "value_raw": "ASTM A312",
+              "value_normalized": "ASTM A312",
+              "start": 7,
+              "end": 16,
+              "rule_id": "standard.astm"
+            }
+          ],
+          "pressure": [],
+          "voltage": [],
+          "model_part": []
+        },
+        "derivation_issues": [],
+        "attribute_parser_version": "technical-attributes-v0.1"
+      },
+      {
+        "schema_version": "0.1",
+        "source_file": "cpse-sap_example.csv",
+        "source_sha256": "c0e2b9b5a0efc395ef6b378f18db233941b5d68dd84676e4c2b773c22700318f",
+        "source_sheet": null,
+        "source_row": 2,
+        "mapping_id": "phase12-cpse-sap-example-v0.1",
+        "raw_fields": {
+          "Company": "NTPC Limited",
+          "External Row ID": "M000925",
+          "Material Code": "",
+          "Short Text": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+          "Base UOM": "",
+          "Material Group": "",
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": "",
+          "Source System": "SAP-shaped demonstration",
+          "Plant": "",
+          "Document Reference": "",
+          "Unmapped Sponsor Note": "retained raw example"
+        },
+        "field_origins": {
+          "source_organization": {
+            "kind": "column",
+            "name": "Company"
+          },
+          "source_record_id": {
+            "kind": "column",
+            "name": "External Row ID"
+          },
+          "description_original": {
+            "kind": "column",
+            "name": "Short Text"
+          },
+          "uom_original": {
+            "kind": "column",
+            "name": "Base UOM"
+          },
+          "category_original": {
+            "kind": "column",
+            "name": "Material Group"
+          },
+          "source_system": {
+            "kind": "column",
+            "name": "Source System"
+          },
+          "source_section": {
+            "kind": "column",
+            "name": "Plant"
+          },
+          "source_url": {
+            "kind": "unmapped"
+          },
+          "document_reference": {
+            "kind": "column",
+            "name": "Document Reference"
+          },
+          "quantity_original": {
+            "kind": "unmapped"
+          },
+          "legacy_material_code": {
+            "kind": "column",
+            "name": "Material Code",
+            "evidence": "Material Code is mapped only when supplied by the source organization; blank remains missing."
+          },
+          "source_identifiers": {
+            "External Row ID": {
+              "kind": "column",
+              "name": "External Row ID"
+            }
+          },
+          "specifications_original": {
+            "Standard Supplied": {
+              "kind": "column",
+              "name": "Standard Supplied"
+            },
+            "Grade Supplied": {
+              "kind": "column",
+              "name": "Grade Supplied"
+            },
+            "Size or Dimension Supplied": {
+              "kind": "column",
+              "name": "Size or Dimension Supplied"
+            },
+            "Pressure Rating Supplied": {
+              "kind": "column",
+              "name": "Pressure Rating Supplied"
+            },
+            "Voltage Rating Supplied": {
+              "kind": "column",
+              "name": "Voltage Rating Supplied"
+            },
+            "Model or Part Supplied": {
+              "kind": "column",
+              "name": "Model or Part Supplied"
+            }
+          }
+        },
+        "issues": [
+          {
+            "field": "uom_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "category_original",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_section",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "source_url",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "document_reference",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "quantity_original",
+            "reason": "unmapped",
+            "severity": "warning"
+          },
+          {
+            "field": "legacy_material_code",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Standard Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Grade Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Size or Dimension Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Pressure Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Voltage Rating Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          },
+          {
+            "field": "specifications_original.Model or Part Supplied",
+            "reason": "blank",
+            "severity": "warning"
+          }
+        ],
+        "source_organization": "NTPC Limited",
+        "source_record_id": "M000925",
+        "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+        "uom_original": null,
+        "category_original": null,
+        "source_system": "SAP-shaped demonstration",
+        "source_section": null,
+        "source_url": null,
+        "document_reference": null,
+        "quantity_original": null,
+        "legacy_material_code": null,
+        "source_identifiers": {
+          "External Row ID": "M000925"
+        },
+        "specifications_original": {
+          "Standard Supplied": "",
+          "Grade Supplied": "",
+          "Size or Dimension Supplied": "",
+          "Pressure Rating Supplied": "",
+          "Voltage Rating Supplied": "",
+          "Model or Part Supplied": ""
+        },
+        "eligible_for_processing": true,
+        "normalization_version": "description-normalization-v0.1",
+        "description_normalized": "Pipe Astm A312, 9.53mm, 141.3mm, 125nb",
+        "family": "pipe",
+        "family_evidence": {
+          "value_raw": "Pipe",
+          "value_normalized": "pipe",
+          "start": 0,
+          "end": 4,
+          "rule_id": "family.pipe.explicit"
+        },
+        "attributes": {
+          "size_dimension": [
+            {
+              "value_raw": "9.53mm",
+              "value_normalized": "9.53MM",
+              "start": 15,
+              "end": 21,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "141.3mm",
+              "value_normalized": "141.3MM",
+              "start": 22,
+              "end": 29,
+              "rule_id": "size.metric"
+            },
+            {
+              "value_raw": "125nb",
+              "value_normalized": "125NB",
+              "start": 30,
+              "end": 35,
+              "rule_id": "size.nominal"
+            }
+          ],
+          "material_grade": [],
+          "standard": [
+            {
+              "value_raw": "Astm A312",
+              "value_normalized": "ASTM A312",
+              "start": 5,
+              "end": 14,
+              "rule_id": "standard.astm"
+            }
+          ],
+          "pressure": [],
+          "voltage": [],
+          "model_part": []
+        },
+        "derivation_issues": [],
+        "attribute_parser_version": "technical-attributes-v0.1"
+      }
+    ],
+    "persisted": false,
+    "erp_writes": false,
+    "next_step": "An authenticated administrator may load a validated adapter pack with the offline seeding utility."
+  }
+]

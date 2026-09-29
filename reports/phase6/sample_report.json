@@ -1,0 +1,35 @@
+{
+  "phase": "6",
+  "status": "review_preparation",
+  "sample_scope": "Deterministic stratified review sample; not a population estimate.",
+  "directed_phase4_pairs": 89381,
+  "unique_unordered_pairs": 63531,
+  "sample_pairs": 100,
+  "outcome_quotas": {
+    "exact_duplicate": 20,
+    "near_duplicate": 20,
+    "possible_functional_equivalent": 20,
+    "conflict": 20,
+    "no_match": 20
+  },
+  "evidence_dispositions": {
+    "supported_duplicate_text": 20,
+    "supported_near_duplicate": 20,
+    "reviewer_equivalence_candidate": 20,
+    "supported_incompatibility": 22,
+    "insufficient_evidence": 18
+  },
+  "cross_organization_pairs": 8,
+  "pairs_with_missing_or_uncertain": 100,
+  "pairs_with_critical_conflicts": 20,
+  "family_mentions": {
+    "unknown": 45,
+    "cable": 8,
+    "pipe": 26,
+    "pump": 12,
+    "valve": 13
+  },
+  "human_labeled_pairs": 0,
+  "validation_status": "pending_human_review",
+  "accuracy_metrics_reported": false
+}

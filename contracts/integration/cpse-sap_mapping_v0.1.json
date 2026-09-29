@@ -1,0 +1,26 @@
+{
+  "mapping_id": "phase12-cpse-sap-example-v0.1",
+  "columns": {
+    "source_organization": "Company",
+    "source_record_id": "External Row ID",
+    "legacy_material_code": "Material Code",
+    "description_original": "Short Text",
+    "uom_original": "Base UOM",
+    "category_original": "Material Group",
+    "source_system": "Source System",
+    "source_section": "Plant",
+    "document_reference": "Document Reference"
+  },
+  "identifiers": [
+    "External Row ID"
+  ],
+  "specifications": [
+    "Standard Supplied",
+    "Grade Supplied",
+    "Size or Dimension Supplied",
+    "Pressure Rating Supplied",
+    "Voltage Rating Supplied",
+    "Model or Part Supplied"
+  ],
+  "legacy_code_evidence": "Material Code is mapped only when supplied by the source organization; blank remains missing."
+}

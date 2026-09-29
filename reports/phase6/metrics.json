@@ -1,0 +1,8 @@
+{
+  "sample_rows": 100,
+  "human_labeled_rows": 0,
+  "unlabeled_rows": 100,
+  "sample_scope": "Phase 6 deterministic review sample; metrics use human-labeled rows only.",
+  "validation_status": "pending_human_review",
+  "performance_metrics_reported": false
+}

@@ -1,0 +1,1611 @@
+[
+  {
+    "name": "identical descriptions from separate rows",
+    "expected_rule_output": "exact_duplicate",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000114",
+        "source_organization": "Indian Oil Corporation Limited",
+        "description_original": "Centrifugal Pump"
+      },
+      "right": {
+        "source_record_id": "M008245",
+        "source_organization": "Oil India Limited",
+        "description_original": "Centrifugal Pump"
+      },
+      "retrieval": {
+        "status": "candidate_only",
+        "retrieval_version": "lexical-retrieval-v0.1",
+        "rank": 1,
+        "retrieval_score": 1.0,
+        "reasons": [
+          {
+            "method": "exact_normalized_text",
+            "value": "Centrifugal Pump"
+          },
+          {
+            "method": "shared_useful_tokens",
+            "tokens": [
+              "centrifugal"
+            ],
+            "token_jaccard": 1.0
+          },
+          {
+            "method": "fuzzy_character_trigrams",
+            "score": 1.0
+          }
+        ]
+      },
+      "supporting_text_evidence": {
+        "exact_normalized_text": true,
+        "shared_useful_tokens": [
+          "centrifugal",
+          "pump"
+        ],
+        "token_jaccard": 1.0,
+        "character_trigram_dice": 1.0,
+        "left_normalized_text": "Centrifugal Pump",
+        "right_normalized_text": "Centrifugal Pump"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "pump",
+          "right_value": "pump",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "Pump",
+            "value_normalized": "pump",
+            "start": 12,
+            "end": 16,
+            "rule_id": "family.pump.explicit",
+            "source_record_id": "M000114"
+          },
+          "right_evidence": {
+            "value_raw": "Pump",
+            "value_normalized": "pump",
+            "start": 12,
+            "end": 16,
+            "rule_id": "family.pump.explicit",
+            "source_record_id": "M008245"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "size_dimension",
+        "material_grade",
+        "standard",
+        "pressure",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "exact_duplicate",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "text.exact_normalized_description"
+        ],
+        "explanation": "The normalized descriptions are identical and no supported critical conflict was found.",
+        "review_required": true,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": false,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "pressure",
+          "size_dimension",
+          "standard",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "minor wording/format changes with matching specifications",
+    "expected_rule_output": "near_duplicate",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000753",
+        "source_organization": "NTPC Limited",
+        "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,"
+      },
+      "right": {
+        "source_record_id": "M000925",
+        "source_organization": "NTPC Limited",
+        "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb"
+      },
+      "retrieval": {
+        "status": "candidate_only",
+        "retrieval_version": "lexical-retrieval-v0.1",
+        "rank": 1,
+        "retrieval_score": 0.972239,
+        "reasons": [
+          {
+            "method": "exact_source_identifier",
+            "field": "tender_id",
+            "value": "28971"
+          },
+          {
+            "method": "shared_useful_tokens",
+            "tokens": [
+              "125nb",
+              "141.3mm",
+              "9.53mm",
+              "a312",
+              "astm"
+            ],
+            "token_jaccard": 1.0
+          },
+          {
+            "method": "fuzzy_character_trigrams",
+            "score": 0.955224
+          }
+        ]
+      },
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [
+          "125nb",
+          "141.3mm",
+          "9.53mm",
+          "a312",
+          "astm",
+          "pipe"
+        ],
+        "token_jaccard": 1.0,
+        "character_trigram_dice": 0.955224,
+        "left_normalized_text": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+        "right_normalized_text": "Pipe Astm A312, 9.53mm, 141.3mm, 125nb"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "pipe",
+          "right_value": "pipe",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "PIPE",
+            "value_normalized": "pipe",
+            "start": 2,
+            "end": 6,
+            "rule_id": "family.pipe.explicit",
+            "source_record_id": "M000753"
+          },
+          "right_evidence": {
+            "value_raw": "Pipe",
+            "value_normalized": "pipe",
+            "start": 0,
+            "end": 4,
+            "rule_id": "family.pipe.explicit",
+            "source_record_id": "M000925"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "compatible",
+          "compatible": [
+            {
+              "comparison_type": "linear_dimension_mm",
+              "values": [
+                "141.3",
+                "9.53"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "9.53MM",
+                  "value_normalized": "9.53MM",
+                  "start": 17,
+                  "end": 23,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000753",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "9.53"
+                },
+                {
+                  "value_raw": "141.3MM",
+                  "value_normalized": "141.3MM",
+                  "start": 24,
+                  "end": 31,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000753",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "141.3"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "9.53mm",
+                  "value_normalized": "9.53MM",
+                  "start": 15,
+                  "end": 21,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000925",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "9.53"
+                },
+                {
+                  "value_raw": "141.3mm",
+                  "value_normalized": "141.3MM",
+                  "start": 22,
+                  "end": 29,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000925",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "141.3"
+                }
+              ]
+            },
+            {
+              "comparison_type": "nominal_bore_mm",
+              "values": [
+                "125"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "125NB",
+                  "value_normalized": "125NB",
+                  "start": 32,
+                  "end": 37,
+                  "rule_id": "size.nominal",
+                  "source_record_id": "M000753",
+                  "comparison_type": "nominal_bore_mm",
+                  "canonical_value": "125"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "125nb",
+                  "value_normalized": "125NB",
+                  "start": 30,
+                  "end": 35,
+                  "rule_id": "size.nominal",
+                  "source_record_id": "M000925",
+                  "comparison_type": "nominal_bore_mm",
+                  "canonical_value": "125"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "compatible",
+          "compatible": [
+            {
+              "comparison_type": "standard_astm",
+              "values": [
+                "ASTMA312"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "ASTM A312",
+                  "value_normalized": "ASTM A312",
+                  "start": 7,
+                  "end": 16,
+                  "rule_id": "standard.astm",
+                  "source_record_id": "M000753",
+                  "comparison_type": "standard_astm",
+                  "canonical_value": "ASTMA312"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "Astm A312",
+                  "value_normalized": "ASTM A312",
+                  "start": 5,
+                  "end": 14,
+                  "rule_id": "standard.astm",
+                  "source_record_id": "M000925",
+                  "comparison_type": "standard_astm",
+                  "canonical_value": "ASTMA312"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "material_grade",
+        "pressure",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "near_duplicate",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "text.strong_variant",
+          "family.compatible",
+          "size_dimension.compatible",
+          "standard.compatible"
+        ],
+        "explanation": "The wording is a strong variant and supported specifications do not conflict.",
+        "review_required": true,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": false,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "pressure",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "15 mm versus 25 mm pipes",
+    "expected_rule_output": "conflict",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000913",
+        "source_organization": "NTPC Limited",
+        "description_original": "PIPE SEAMLESS,SS,A312-TP304L,80S,15MM"
+      },
+      "right": {
+        "source_record_id": "M000927",
+        "source_organization": "NTPC Limited",
+        "description_original": "Pipe Seamless,ss,a312-tp304l,80s,25mm"
+      },
+      "retrieval": {
+        "status": "candidate_only",
+        "retrieval_version": "lexical-retrieval-v0.1",
+        "rank": 4,
+        "retrieval_score": 0.854048,
+        "reasons": [
+          {
+            "method": "exact_source_identifier",
+            "field": "tender_id",
+            "value": "28971"
+          },
+          {
+            "method": "shared_useful_tokens",
+            "tokens": [
+              "80s",
+              "a312-tp304l",
+              "seamless",
+              "ss"
+            ],
+            "token_jaccard": 0.714286
+          },
+          {
+            "method": "fuzzy_character_trigrams",
+            "score": 0.916667
+          }
+        ]
+      },
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [
+          "80s",
+          "a312-tp304l",
+          "pipe",
+          "seamless",
+          "ss"
+        ],
+        "token_jaccard": 0.714286,
+        "character_trigram_dice": 0.916667,
+        "left_normalized_text": "PIPE SEAMLESS, SS, A312-TP304L, 80S, 15MM",
+        "right_normalized_text": "Pipe Seamless, ss, a312-tp304l, 80s, 25mm"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "pipe",
+          "right_value": "pipe",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "PIPE",
+            "value_normalized": "pipe",
+            "start": 0,
+            "end": 4,
+            "rule_id": "family.pipe.explicit",
+            "source_record_id": "M000913"
+          },
+          "right_evidence": {
+            "value_raw": "Pipe",
+            "value_normalized": "pipe",
+            "start": 0,
+            "end": 4,
+            "rule_id": "family.pipe.explicit",
+            "source_record_id": "M000927"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "conflict",
+          "compatible": [
+            {
+              "comparison_type": "pipe_schedule",
+              "values": [
+                "80S"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "80S",
+                  "value_normalized": "80S",
+                  "start": 29,
+                  "end": 32,
+                  "rule_id": "size.schedule",
+                  "source_record_id": "M000913",
+                  "comparison_type": "pipe_schedule",
+                  "canonical_value": "80S"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "80s",
+                  "value_normalized": "80S",
+                  "start": 29,
+                  "end": 32,
+                  "rule_id": "size.schedule",
+                  "source_record_id": "M000927",
+                  "comparison_type": "pipe_schedule",
+                  "canonical_value": "80S"
+                }
+              ]
+            }
+          ],
+          "conflicts": [
+            {
+              "reason_code": "size_dimension.different_linear_dimension_mm",
+              "comparison_type": "linear_dimension_mm",
+              "left_values": [
+                "15"
+              ],
+              "right_values": [
+                "25"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "15MM",
+                  "value_normalized": "15MM",
+                  "start": 33,
+                  "end": 37,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000913",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "15"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "25mm",
+                  "value_normalized": "25MM",
+                  "start": 33,
+                  "end": 37,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000927",
+                  "comparison_type": "linear_dimension_mm",
+                  "canonical_value": "25"
+                }
+              ]
+            }
+          ],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "compatible",
+          "compatible": [
+            {
+              "comparison_type": "material_grade",
+              "values": [
+                "A312TP304L",
+                "TP304L"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "A312-TP304L",
+                  "value_normalized": "A312-TP304L",
+                  "start": 17,
+                  "end": 28,
+                  "rule_id": "grade.designation",
+                  "source_record_id": "M000913",
+                  "comparison_type": "material_grade",
+                  "canonical_value": "A312TP304L"
+                },
+                {
+                  "value_raw": "TP304L",
+                  "value_normalized": "TP304L",
+                  "start": 22,
+                  "end": 28,
+                  "rule_id": "grade.stainless",
+                  "source_record_id": "M000913",
+                  "comparison_type": "material_grade",
+                  "canonical_value": "TP304L"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "a312-tp304l",
+                  "value_normalized": "A312-TP304L",
+                  "start": 17,
+                  "end": 28,
+                  "rule_id": "grade.designation",
+                  "source_record_id": "M000927",
+                  "comparison_type": "material_grade",
+                  "canonical_value": "A312TP304L"
+                },
+                {
+                  "value_raw": "tp304l",
+                  "value_normalized": "TP304L",
+                  "start": 22,
+                  "end": 28,
+                  "rule_id": "grade.stainless",
+                  "source_record_id": "M000927",
+                  "comparison_type": "material_grade",
+                  "canonical_value": "TP304L"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "standard",
+        "pressure",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "conflict",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "size_dimension.different_linear_dimension_mm"
+        ],
+        "explanation": "Supported critical specifications conflict, so an identity merge is blocked.",
+        "review_required": true,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": true,
+        "critical_unknown_or_uncertain_fields": [
+          "pressure",
+          "standard",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "150 mm2 versus 240 mm2 cables",
+    "expected_rule_output": "conflict",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000830",
+        "source_organization": "NTPC Limited",
+        "description_original": "CABLE, PWR, 150MM2, 1C, STRANDED, AL, 11KV"
+      },
+      "right": {
+        "source_record_id": "M000834",
+        "source_organization": "NTPC Limited",
+        "description_original": "CABLE,PWR,240MM2,1C,STRANDED,AL,11KV"
+      },
+      "retrieval": {
+        "status": "candidate_only",
+        "retrieval_version": "lexical-retrieval-v0.1",
+        "rank": 4,
+        "retrieval_score": 0.861136,
+        "reasons": [
+          {
+            "method": "exact_source_identifier",
+            "field": "tender_id",
+            "value": "28886"
+          },
+          {
+            "method": "shared_useful_tokens",
+            "tokens": [
+              "11kv",
+              "1c",
+              "al",
+              "cable",
+              "pwr",
+              "stranded"
+            ],
+            "token_jaccard": 0.75
+          },
+          {
+            "method": "fuzzy_character_trigrams",
+            "score": 0.909091
+          }
+        ]
+      },
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [
+          "11kv",
+          "1c",
+          "al",
+          "cable",
+          "pwr",
+          "stranded"
+        ],
+        "token_jaccard": 0.75,
+        "character_trigram_dice": 0.909091,
+        "left_normalized_text": "CABLE, PWR, 150MM2, 1C, STRANDED, AL, 11KV",
+        "right_normalized_text": "CABLE, PWR, 240MM2, 1C, STRANDED, AL, 11KV"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "cable",
+          "right_value": "cable",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "CABLE",
+            "value_normalized": "cable",
+            "start": 0,
+            "end": 5,
+            "rule_id": "family.cable.explicit",
+            "source_record_id": "M000830"
+          },
+          "right_evidence": {
+            "value_raw": "CABLE",
+            "value_normalized": "cable",
+            "start": 0,
+            "end": 5,
+            "rule_id": "family.cable.explicit",
+            "source_record_id": "M000834"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "conflict",
+          "compatible": [],
+          "conflicts": [
+            {
+              "reason_code": "size_dimension.different_cross_section_area_mm2",
+              "comparison_type": "cross_section_area_mm2",
+              "left_values": [
+                "150"
+              ],
+              "right_values": [
+                "240"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "150MM2",
+                  "value_normalized": "150MM2",
+                  "start": 12,
+                  "end": 18,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000830",
+                  "comparison_type": "cross_section_area_mm2",
+                  "canonical_value": "150"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "240MM2",
+                  "value_normalized": "240MM2",
+                  "start": 10,
+                  "end": 16,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000834",
+                  "comparison_type": "cross_section_area_mm2",
+                  "canonical_value": "240"
+                }
+              ]
+            }
+          ],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "compatible",
+          "compatible": [
+            {
+              "comparison_type": "voltage_v",
+              "values": [
+                "11000"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "11KV",
+                  "value_normalized": "11KV",
+                  "start": 38,
+                  "end": 42,
+                  "rule_id": "voltage.explicit",
+                  "source_record_id": "M000830",
+                  "comparison_type": "voltage_v",
+                  "canonical_value": "11000"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "11KV",
+                  "value_normalized": "11KV",
+                  "start": 32,
+                  "end": 36,
+                  "rule_id": "voltage.explicit",
+                  "source_record_id": "M000834",
+                  "comparison_type": "voltage_v",
+                  "canonical_value": "11000"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "material_grade",
+        "standard",
+        "pressure",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "conflict",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "size_dimension.different_cross_section_area_mm2"
+        ],
+        "explanation": "Supported critical specifications conflict, so an identity merge is blocked.",
+        "review_required": true,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": true,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "pressure",
+          "standard"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "different valve pressure-rating bases",
+    "expected_rule_output": "conflict",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M010407",
+        "source_organization": "Oil India Limited",
+        "description_original": "Gate Valve, 2\" x 300 Class, API 6D"
+      },
+      "right": {
+        "source_record_id": "M003626",
+        "source_organization": "Oil India Limited",
+        "description_original": "Gate Valve, 2.1/16 inch x 5000 PSI, API 6A"
+      },
+      "retrieval": null,
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [
+          "api",
+          "gate",
+          "valve"
+        ],
+        "token_jaccard": 0.25,
+        "character_trigram_dice": 0.5,
+        "left_normalized_text": "Gate Valve, 2\" x 300 Class, API 6D",
+        "right_normalized_text": "Gate Valve, 2.1/16 inch x 5000 PSI, API 6A"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "valve",
+          "right_value": "valve",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "Valve",
+            "value_normalized": "valve",
+            "start": 5,
+            "end": 10,
+            "rule_id": "family.valve.explicit",
+            "source_record_id": "M010407"
+          },
+          "right_evidence": {
+            "value_raw": "Valve",
+            "value_normalized": "valve",
+            "start": 5,
+            "end": 10,
+            "rule_id": "family.valve.explicit",
+            "source_record_id": "M003626"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "uncertain",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [],
+          "uncertain": [
+            {
+              "value_raw": "2.1/16 inch",
+              "value_normalized": "2.1/16 INCH",
+              "start": 12,
+              "end": 23,
+              "rule_id": "size.inch",
+              "source_record_id": "M003626",
+              "comparison_type": "uncertain_size",
+              "canonical_value": null
+            }
+          ],
+          "not_comparable": [
+            {
+              "reason_code": "size_dimension.different_semantic_types",
+              "left_types": [
+                "diameter_inch"
+              ],
+              "right_types": [],
+              "left_evidence": [
+                {
+                  "value_raw": "2\"",
+                  "value_normalized": "2\"",
+                  "start": 12,
+                  "end": 14,
+                  "rule_id": "size.inch",
+                  "source_record_id": "M010407",
+                  "comparison_type": "diameter_inch",
+                  "canonical_value": "2"
+                }
+              ],
+              "right_evidence": []
+            }
+          ]
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "conflict",
+          "compatible": [],
+          "conflicts": [
+            {
+              "reason_code": "standard.different_standard_api",
+              "comparison_type": "standard_api",
+              "left_values": [
+                "API6D"
+              ],
+              "right_values": [
+                "API6A"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "API 6D",
+                  "value_normalized": "API 6D",
+                  "start": 28,
+                  "end": 34,
+                  "rule_id": "standard.api",
+                  "source_record_id": "M010407",
+                  "comparison_type": "standard_api",
+                  "canonical_value": "API6D"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "API 6A",
+                  "value_normalized": "API 6A",
+                  "start": 36,
+                  "end": 42,
+                  "rule_id": "standard.api",
+                  "source_record_id": "M003626",
+                  "comparison_type": "standard_api",
+                  "canonical_value": "API6A"
+                }
+              ]
+            }
+          ],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "conflict",
+          "compatible": [],
+          "conflicts": [
+            {
+              "reason_code": "pressure.incompatible_rating_bases",
+              "left_types": [
+                "pressure_class"
+              ],
+              "right_types": [
+                "pressure_psi"
+              ],
+              "left_evidence": [
+                {
+                  "value_raw": "300 Class",
+                  "value_normalized": "300 CLASS",
+                  "start": 17,
+                  "end": 26,
+                  "rule_id": "pressure.class.reversed",
+                  "source_record_id": "M010407",
+                  "comparison_type": "pressure_class",
+                  "canonical_value": "300"
+                }
+              ],
+              "right_evidence": [
+                {
+                  "value_raw": "5000 PSI",
+                  "value_normalized": "5000 PSI",
+                  "start": 26,
+                  "end": 34,
+                  "rule_id": "pressure.unit",
+                  "source_record_id": "M003626",
+                  "comparison_type": "pressure_psi",
+                  "canonical_value": "5000"
+                }
+              ]
+            }
+          ],
+          "missing": [],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "size_dimension",
+        "material_grade",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "conflict",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "pressure.incompatible_rating_bases",
+          "standard.different_standard_api"
+        ],
+        "explanation": "Supported critical specifications conflict, so an identity merge is blocked.",
+        "review_required": true,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": true,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "size_dimension",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "same pump family with missing specifications",
+    "expected_rule_output": "possible_functional_equivalent",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000041",
+        "source_organization": "Indian Oil Corporation Limited",
+        "description_original": "API 610 Centrifugal Pump"
+      },
+      "right": {
+        "source_record_id": "M000114",
+        "source_organization": "Indian Oil Corporation Limited",
+        "description_original": "Centrifugal Pump"
+      },
+      "retrieval": {
+        "status": "candidate_only",
+        "retrieval_version": "lexical-retrieval-v0.1",
+        "rank": 1,
+        "retrieval_score": 0.647222,
+        "reasons": [
+          {
+            "method": "shared_useful_tokens",
+            "tokens": [
+              "centrifugal"
+            ],
+            "token_jaccard": 0.5
+          },
+          {
+            "method": "fuzzy_character_trigrams",
+            "score": 0.777778
+          }
+        ]
+      },
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [
+          "centrifugal",
+          "pump"
+        ],
+        "token_jaccard": 0.5,
+        "character_trigram_dice": 0.777778,
+        "left_normalized_text": "API 610 Centrifugal Pump",
+        "right_normalized_text": "Centrifugal Pump"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "compatible",
+          "compatible": true,
+          "left_value": "pump",
+          "right_value": "pump",
+          "conflicts": [],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "Pump",
+            "value_normalized": "pump",
+            "start": 20,
+            "end": 24,
+            "rule_id": "family.pump.explicit",
+            "source_record_id": "M000041"
+          },
+          "right_evidence": {
+            "value_raw": "Pump",
+            "value_normalized": "pump",
+            "start": 12,
+            "end": 16,
+            "rule_id": "family.pump.explicit",
+            "source_record_id": "M000114"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "uncertain",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": [
+            {
+              "reason_code": "standard.different_semantic_types",
+              "left_types": [
+                "standard_api"
+              ],
+              "right_types": [],
+              "left_evidence": [
+                {
+                  "value_raw": "API 610",
+                  "value_normalized": "API 610",
+                  "start": 0,
+                  "end": 7,
+                  "rule_id": "standard.api",
+                  "source_record_id": "M000041",
+                  "comparison_type": "standard_api",
+                  "canonical_value": "API610"
+                }
+              ],
+              "right_evidence": []
+            }
+          ]
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "size_dimension",
+        "material_grade",
+        "standard",
+        "pressure",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "possible_functional_equivalent",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "family.compatible",
+          "text.partial_support",
+          "review.qualified_engineer_required"
+        ],
+        "explanation": "The same item family and partial wording support justify qualified review only; engineering equivalence is not established.",
+        "review_required": true,
+        "qualified_reviewer_required": true,
+        "identity_merge_blocked": true,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "pressure",
+          "size_dimension",
+          "standard",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  },
+  {
+    "name": "unrelated explicit families sharing generic material context",
+    "expected_rule_output": "no_match",
+    "passed": true,
+    "comparison": {
+      "comparison_version": "pair-evidence-v0.1",
+      "left": {
+        "source_record_id": "M000114",
+        "source_organization": "Indian Oil Corporation Limited",
+        "description_original": "Centrifugal Pump"
+      },
+      "right": {
+        "source_record_id": "M000165",
+        "source_organization": "Indian Oil Corporation Limited",
+        "description_original": "Electrical Cables"
+      },
+      "retrieval": null,
+      "supporting_text_evidence": {
+        "exact_normalized_text": false,
+        "shared_useful_tokens": [],
+        "token_jaccard": 0.0,
+        "character_trigram_dice": 0.137931,
+        "left_normalized_text": "Centrifugal Pump",
+        "right_normalized_text": "Electrical Cables"
+      },
+      "field_comparisons": {
+        "family": {
+          "field": "family",
+          "status": "conflict",
+          "compatible": false,
+          "left_value": "pump",
+          "right_value": "cable",
+          "conflicts": [
+            {
+              "reason_code": "family.different_explicit_family",
+              "left_value": "pump",
+              "right_value": "cable"
+            }
+          ],
+          "missing": [],
+          "left_evidence": {
+            "value_raw": "Pump",
+            "value_normalized": "pump",
+            "start": 12,
+            "end": 16,
+            "rule_id": "family.pump.explicit",
+            "source_record_id": "M000114"
+          },
+          "right_evidence": {
+            "value_raw": "Cables",
+            "value_normalized": "cable",
+            "start": 11,
+            "end": 17,
+            "rule_id": "family.cable.explicit",
+            "source_record_id": "M000165"
+          }
+        },
+        "size_dimension": {
+          "field": "size_dimension",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "material_grade": {
+          "field": "material_grade",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "standard": {
+          "field": "standard",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "pressure": {
+          "field": "pressure",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "voltage": {
+          "field": "voltage",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        },
+        "model_part": {
+          "field": "model_part",
+          "status": "unknown",
+          "compatible": [],
+          "conflicts": [],
+          "missing": [
+            "left",
+            "right"
+          ],
+          "uncertain": [],
+          "not_comparable": []
+        }
+      },
+      "missing_or_uncertain_attributes": [
+        "size_dimension",
+        "material_grade",
+        "standard",
+        "pressure",
+        "voltage",
+        "model_part"
+      ],
+      "outcome": {
+        "label": "no_match",
+        "status": "proposed_outcome",
+        "reason_codes": [
+          "family.different_explicit_family"
+        ],
+        "explanation": "The descriptions identify different item families; shared wording cannot support a match.",
+        "review_required": false,
+        "qualified_reviewer_required": false,
+        "identity_merge_blocked": true,
+        "critical_unknown_or_uncertain_fields": [
+          "material_grade",
+          "pressure",
+          "size_dimension",
+          "standard",
+          "voltage"
+        ],
+        "automatic_action": null
+      }
+    }
+  }
+]

@@ -1,0 +1,174 @@
+﻿C:\Users\akava\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_blank_values_are_retained_with_issues (test_corpus_loader.CorpusLoaderTests.test_blank_values_are_retained_with_issues) ... ok
+test_exact_text_bom_multiline_and_repeated_ids (test_corpus_loader.CorpusLoaderTests.test_exact_text_bom_multiline_and_repeated_ids) ... ok
+test_header_only_file_has_no_invented_rows (test_corpus_loader.CorpusLoaderTests.test_header_only_file_has_no_invented_rows) ... ok
+test_import_root_must_contain_source (test_corpus_loader.CorpusLoaderTests.test_import_root_must_contain_source) ... ok
+test_invalid_structure_and_encoding_fail_without_writes (test_corpus_loader.CorpusLoaderTests.test_invalid_structure_and_encoding_fail_without_writes) ... ok
+test_real_corpus_preserves_every_cell_and_row (test_corpus_loader.CorpusLoaderTests.test_real_corpus_preserves_every_cell_and_row) ... ok
+test_candidates_trace_to_corpus_without_promoting_heuristics (test_mapping_loader.MappingTests.test_candidates_trace_to_corpus_without_promoting_heuristics) ... ok
+test_explicit_renaming_and_supported_specification (test_mapping_loader.MappingTests.test_explicit_renaming_and_supported_specification) ... ok
+test_invalid_and_ambiguous_mappings_fail (test_mapping_loader.MappingTests.test_invalid_and_ambiguous_mappings_fail) ... ok
+test_unmapped_required_fields_are_errors_without_fabricated_values (test_mapping_loader.MappingTests.test_unmapped_required_fields_are_errors_without_fabricated_values) ... ok
+test_capabilities_isolation_and_server_actor (test_phase10_api.Phase10GovernanceApiTests.test_capabilities_isolation_and_server_actor) ... ok
+test_governance_interface_uses_audit_contract (test_phase10_api.Phase10GovernanceApiTests.test_governance_interface_uses_audit_contract) ... ok
+test_override_history_filters_idempotency_and_restart (test_phase10_api.Phase10GovernanceApiTests.test_override_history_filters_idempotency_and_restart) ... ok
+test_approve_reconsider_persists_audit_versions_and_mapping_history (test_phase10_governance.Phase10GovernanceStorageTests.test_approve_reconsider_persists_audit_versions_and_mapping_history) ... ok
+test_audit_is_append_only_and_failed_transaction_leaves_no_event (test_phase10_governance.Phase10GovernanceStorageTests.test_audit_is_append_only_and_failed_transaction_leaves_no_event) ... ok
+test_filters_are_exact (test_phase10_governance.Phase10GovernanceStorageTests.test_filters_are_exact) ... ok
+test_counts_completeness_conflict_and_mapping_reconcile (test_phase11_dashboard.Phase11DashboardTests.test_counts_completeness_conflict_and_mapping_reconcile) ... ok
+test_quality_interface_uses_authoritative_api_and_explains_exports (test_phase11_dashboard.Phase11DashboardTests.test_quality_interface_uses_authoritative_api_and_explains_exports) ... ok
+test_reconsideration_separates_current_and_historical_mapping (test_phase11_dashboard.Phase11DashboardTests.test_reconsideration_separates_current_and_historical_mapping) ... ok
+test_workspace_access_and_stable_state_hash (test_phase11_dashboard.Phase11DashboardTests.test_workspace_access_and_stable_state_hash) ... ok
+test_excel_pack_is_reproducible_current_state_and_separates_history (test_phase11_exports.Phase11ExportTests.test_excel_pack_is_reproducible_current_state_and_separates_history) ... ok
+test_export_workspace_isolation (test_phase11_exports.Phase11ExportTests.test_export_workspace_isolation) ... ok
+test_registry_and_mapping_exports_preserve_current_ids_and_paginate (test_phase11_exports.Phase11ExportTests.test_registry_and_mapping_exports_preserve_current_ids_and_paginate) ... ok
+test_deterministic_preview_and_no_overwrite_pack (test_phase12_adapter.Phase12AdapterTests.test_deterministic_preview_and_no_overwrite_pack) ... ok
+test_missing_optional_required_duplicate_and_invalid_values (test_phase12_adapter.Phase12AdapterTests.test_missing_optional_required_duplicate_and_invalid_values) ... ok
+test_two_schemas_feed_the_unchanged_matching_core (test_phase12_adapter.Phase12AdapterTests.test_two_schemas_feed_the_unchanged_matching_core) ... ok
+test_access_limits_and_validation (test_phase12_api.Phase12ApiTests.test_access_limits_and_validation) ... ok
+test_contract_examples_and_preview_are_read_only (test_phase12_api.Phase12ApiTests.test_contract_examples_and_preview_are_read_only) ... ok
+test_interface_exposes_preview_boundary (test_phase12_api.Phase12ApiTests.test_interface_exposes_preview_boundary) ... ok
+test_complete_local_demo_and_no_overwrite (test_phase13_demo.Phase13DemoTests.test_complete_local_demo_and_no_overwrite) ... ok
+test_seed_fallback_rebuilds_committed_candidates_without_output_pack (test_phase13_demo.Phase13DemoTests.test_seed_fallback_rebuilds_committed_candidates_without_output_pack) ... ok
+test_empty_audit (test_phase1c.AuditTests.test_empty_audit) ... ok
+test_measured_audit (test_phase1c.AuditTests.test_measured_audit) ... ok
+test_strict_json_nonfinite (test_phase1c.AuditTests.test_strict_json_nonfinite) ... ok
+test_cli_no_metrics_and_overwrite_refusal (test_phase1c.ReviewTests.test_cli_no_metrics_and_overwrite_refusal) ... ok
+test_complete_metrics (test_phase1c.ReviewTests.test_complete_metrics) ... ok
+test_curation_preserves_existing_review_bytes (test_phase1c.ReviewTests.test_curation_preserves_existing_review_bytes) ... ok
+test_duplicate (test_phase1c.ReviewTests.test_duplicate) ... ok
+test_invalid_label (test_phase1c.ReviewTests.test_invalid_label) ... ok
+test_invalid_usability (test_phase1c.ReviewTests.test_invalid_usability) ... ok
+test_missing (test_phase1c.ReviewTests.test_missing) ... ok
+test_partial_metrics_and_zero_denominators (test_phase1c.ReviewTests.test_partial_metrics_and_zero_denominators) ... ok
+test_preserve_annotations_and_no_overwrite (test_phase1c.ReviewTests.test_preserve_annotations_and_no_overwrite) ... ok
+test_source_tampering (test_phase1c.ReviewTests.test_source_tampering) ... ok
+test_split_and_blank_combine (test_phase1c.ReviewTests.test_split_and_blank_combine) ... ok
+test_unknown (test_phase1c.ReviewTests.test_unknown) ... ok
+test_cli_csv_and_xlsx_packs (test_phase2_ingest.IngestTests.test_cli_csv_and_xlsx_packs) ... ok
+test_empty_file_report_retains_header_presence (test_phase2_ingest.IngestTests.test_empty_file_report_retains_header_presence) ... ok
+test_invalid_input_does_not_create_pack (test_phase2_ingest.IngestTests.test_invalid_input_does_not_create_pack) ... ok
+test_report_counts_traceable_sample_and_no_overwrite (test_phase2_ingest.IngestTests.test_report_counts_traceable_sample_and_no_overwrite) ... ok
+test_serializable_profiles_match_existing_apis (test_phase2_ingest.IngestTests.test_serializable_profiles_match_existing_apis) ... ok
+test_all_candidate_attribute_spans_are_exact_and_ids_unchanged (test_phase3_attributes.AttributeTests.test_all_candidate_attribute_spans_are_exact_and_ids_unchanged) ... ok
+test_cable_voltage_is_not_power_current_or_frequency (test_phase3_attributes.AttributeTests.test_cable_voltage_is_not_power_current_or_frequency) ... ok
+test_exact_identity_conflict_examples_retain_different_values (test_phase3_attributes.AttributeTests.test_exact_identity_conflict_examples_retain_different_values) ... ok
+test_missing_and_uncertain_values_remain_empty (test_phase3_attributes.AttributeTests.test_missing_and_uncertain_values_remain_empty) ... ok
+test_pipe_values_have_exact_source_evidence (test_phase3_attributes.AttributeTests.test_pipe_values_have_exact_source_evidence) ... ok
+test_pump_model_and_standard_require_explicit_text (test_phase3_attributes.AttributeTests.test_pump_model_and_standard_require_explicit_text) ... ok
+test_valve_standard_size_pressure_and_conflicts_stay_separate (test_phase3_attributes.AttributeTests.test_valve_standard_size_pressure_and_conflicts_stay_separate) ... ok
+test_full_pack_reconciles_and_refuses_overwrite (test_phase3_enrich.EnrichTests.test_full_pack_reconciles_and_refuses_overwrite) ... ok
+test_all_candidates_preserve_originals_and_valid_family_spans (test_phase3_normalization.NormalizationTests.test_all_candidates_preserve_originals_and_valid_family_spans) ... ok
+test_ambiguous_and_unknown_families_stay_unknown (test_phase3_normalization.NormalizationTests.test_ambiguous_and_unknown_families_stay_unknown) ... ok
+test_normalization_is_deterministic_idempotent_and_conservative (test_phase3_normalization.NormalizationTests.test_normalization_is_deterministic_idempotent_and_conservative) ... ok
+test_real_single_family_examples_preserve_identity_and_description (test_phase3_normalization.NormalizationTests.test_real_single_family_examples_preserve_identity_and_description) ... ok
+test_exact_electrical_cables_cross_organization (test_phase4_index.IndexTests.test_exact_electrical_cables_cross_organization) ... ok
+test_identifier_reasons_retain_exact_field_and_value (test_phase4_index.IndexTests.test_identifier_reasons_retain_exact_field_and_value) ... ok
+test_index_has_no_pair_matrix (test_phase4_index.IndexTests.test_index_has_no_pair_matrix) ... ok
+test_repeated_cross_organization_description (test_phase4_index.IndexTests.test_repeated_cross_organization_description) ... ok
+test_useful_token_pool_is_bounded_and_explained (test_phase4_index.IndexTests.test_useful_token_pool_is_bounded_and_explained) ... ok
+test_full_pack_reconciles_is_bounded_and_refuses_overwrite (test_phase4_pack.PackTests.test_full_pack_reconciles_is_bounded_and_refuses_overwrite) ... ok
+test_different_size_candidate_is_proposed_without_decision (test_phase4_retrieval.RetrievalTests.test_different_size_candidate_is_proposed_without_decision) ... ok
+test_exact_repeat_is_first_and_candidate_only (test_phase4_retrieval.RetrievalTests.test_exact_repeat_is_first_and_candidate_only) ... ok
+test_near_formatting_pipe_variant_is_retrieved (test_phase4_retrieval.RetrievalTests.test_near_formatting_pipe_variant_is_retrieved) ... ok
+test_top_k_is_deterministic_limited_and_validated (test_phase4_retrieval.RetrievalTests.test_top_k_is_deterministic_limited_and_validated) ... ok
+test_cable_cross_section_conflict_blocks_identity (test_phase5_comparison.Phase5ComparisonTests.test_cable_cross_section_conflict_blocks_identity) ... ok
+test_matching_pipe_specs_are_compatible_and_traceable (test_phase5_comparison.Phase5ComparisonTests.test_matching_pipe_specs_are_compatible_and_traceable) ... ok
+test_missing_values_are_unknown_not_agreement (test_phase5_comparison.Phase5ComparisonTests.test_missing_values_are_unknown_not_agreement) ... ok
+test_pipe_size_conflict_blocks_identity (test_phase5_comparison.Phase5ComparisonTests.test_pipe_size_conflict_blocks_identity) ... ok
+test_pressure_class_and_psi_are_not_equated_and_block_identity (test_phase5_comparison.Phase5ComparisonTests.test_pressure_class_and_psi_are_not_equated_and_block_identity) ... ok
+test_voltage_compatible_units_and_diameter_not_area (test_phase5_comparison.Phase5ComparisonTests.test_voltage_compatible_units_and_diameter_not_area) ... ok
+test_cli_returns_readable_traceable_json (test_phase5_outcomes.Phase5OutcomeTests.test_cli_returns_readable_traceable_json) ... ok
+test_critical_conflict_precedes_similar_text (test_phase5_outcomes.Phase5OutcomeTests.test_critical_conflict_precedes_similar_text) ... ok
+test_different_explicit_families_are_no_match (test_phase5_outcomes.Phase5OutcomeTests.test_different_explicit_families_are_no_match) ... ok
+test_exact_duplicate_keeps_unknowns_and_requires_review (test_phase5_outcomes.Phase5OutcomeTests.test_exact_duplicate_keeps_unknowns_and_requires_review) ... ok
+test_exact_text_keeps_unknowns_and_conflict_still_precedes_text (test_phase5_outcomes.Phase5OutcomeTests.test_exact_text_keeps_unknowns_and_conflict_still_precedes_text) ... ok
+test_insufficient_evidence_is_not_confirmed_no_match (test_phase5_outcomes.Phase5OutcomeTests.test_insufficient_evidence_is_not_confirmed_no_match) ... ok
+test_near_duplicate_with_matching_specifications (test_phase5_outcomes.Phase5OutcomeTests.test_near_duplicate_with_matching_specifications) ... ok
+test_possible_equivalent_is_reviewer_only (test_phase5_outcomes.Phase5OutcomeTests.test_possible_equivalent_is_reviewer_only) ... ok
+test_retrieval_score_is_separate_and_cannot_change_outcome (test_phase5_outcomes.Phase5OutcomeTests.test_retrieval_score_is_separate_and_cannot_change_outcome) ... ok
+test_unrelated_records_with_generic_shared_words_are_no_match (test_phase5_outcomes.Phase5OutcomeTests.test_unrelated_records_with_generic_shared_words_are_no_match) ... ok
+test_authoritative_pack_reconciles_and_examples_pass (test_phase5_pack.Phase5PackTests.test_authoritative_pack_reconciles_and_examples_pass) ... ok
+test_manifest_hashes_and_no_overwrite (test_phase5_pack.Phase5PackTests.test_manifest_hashes_and_no_overwrite) ... ok
+test_sample_safety_invariants (test_phase6_inspection.Phase6InspectionTests.test_sample_safety_invariants) ... ok
+test_entirely_unlabeled_sample_emits_no_performance_metrics (test_phase6_metrics.Phase6MetricsTests.test_entirely_unlabeled_sample_emits_no_performance_metrics) ... ok
+test_invalid_human_label_fails (test_phase6_metrics.Phase6MetricsTests.test_invalid_human_label_fails) ... ok
+test_partial_labels_use_only_labeled_denominator (test_phase6_metrics.Phase6MetricsTests.test_partial_labels_use_only_labeled_denominator) ... ok
+test_report_reconciles_directions_and_manifest (test_phase6_sample.Phase6SampleTests.test_report_reconciles_directions_and_manifest) ... ok
+test_sample_is_unique_balanced_traceable_and_unlabeled (test_phase6_sample.Phase6SampleTests.test_sample_is_unique_balanced_traceable_and_unlabeled) ... ok
+test_cli_decision_and_restart_preview (test_phase7_cli.Phase7CliTests.test_cli_decision_and_restart_preview) ... ok
+test_demonstration_pack_manifest_and_separation (test_phase7_cli.Phase7CliTests.test_demonstration_pack_manifest_and_separation) ... ok
+test_changed_source_snapshot_is_rejected_atomically (test_phase7_registry.Phase7RegistryTests.test_changed_source_snapshot_is_rejected_atomically) ... ok
+test_code_and_source_snapshot_survive_reload_and_repeat (test_phase7_registry.Phase7RegistryTests.test_code_and_source_snapshot_survive_reload_and_repeat) ... ok
+test_every_group_pair_is_checked_and_conflict_rolls_back (test_phase7_registry.Phase7RegistryTests.test_every_group_pair_is_checked_and_conflict_rolls_back) ... ok
+test_explicit_approval_is_idempotent_and_reconsideration_keeps_history (test_phase7_registry.Phase7RegistryTests.test_explicit_approval_is_idempotent_and_reconsideration_keeps_history) ... ok
+test_functional_equivalence_is_separate_and_creates_no_registry (test_phase7_registry.Phase7RegistryTests.test_functional_equivalence_is_separate_and_creates_no_registry) ... ok
+test_migration_preview_and_exports_preserve_originals_and_missing_codes (test_phase7_registry.Phase7RegistryTests.test_migration_preview_and_exports_preserve_originals_and_missing_codes) ... ok
+test_reject_defer_and_phase6_warnings_are_recorded_without_membership (test_phase7_registry.Phase7RegistryTests.test_reject_defer_and_phase6_warnings_are_recorded_without_membership) ... ok
+test_source_cannot_join_two_active_identity_registries (test_phase7_registry.Phase7RegistryTests.test_source_cannot_join_two_active_identity_registries) ... ok
+test_standard_description_uses_supported_values_and_unknowns (test_phase7_registry.Phase7RegistryTests.test_standard_description_uses_supported_values_and_unknowns) ... ok
+test_health_readiness_material_pagination_and_search (test_phase8_read_api.Phase8ReadApiTests.test_health_readiness_material_pagination_and_search) ... ok
+test_lexical_candidates_and_pair_evidence (test_phase8_read_api.Phase8ReadApiTests.test_lexical_candidates_and_pair_evidence) ... ok
+test_missing_resources_return_useful_errors (test_phase8_read_api.Phase8ReadApiTests.test_missing_resources_return_useful_errors) ... ok
+test_registry_mappings_history_relationships_and_dashboard (test_phase8_read_api.Phase8ReadApiTests.test_registry_mappings_history_relationships_and_dashboard) ... ok
+test_deployment_refuses_demo_auth (test_phase8_storage.Phase8StorageTests.test_deployment_refuses_demo_auth) ... ok
+test_sqlite_image_roundtrip_preserves_code_history_and_idempotency (test_phase8_storage.Phase8StorageTests.test_sqlite_image_roundtrip_preserves_code_history_and_idempotency) ... ok
+test_approval_is_idempotent_actor_is_server_identity_and_exports_work (test_phase8_write_api.Phase8WriteApiTests.test_approval_is_idempotent_actor_is_server_identity_and_exports_work) ... ok
+test_authentication_ownership_conflict_and_changed_idempotency_payload (test_phase8_write_api.Phase8WriteApiTests.test_authentication_ownership_conflict_and_changed_idempotency_payload) ... ok
+test_reconsideration_functional_relationship_and_restart_persistence (test_phase8_write_api.Phase8WriteApiTests.test_reconsideration_functional_relationship_and_restart_persistence) ... ok
+test_reviewer_application_is_served_by_fastapi (test_phase9_frontend.Phase9FrontendTests.test_reviewer_application_is_served_by_fastapi) ... ok
+test_thin_client_uses_phase8_contract_and_write_guards (test_phase9_frontend.Phase9FrontendTests.test_thin_client_uses_phase8_contract_and_write_guards) ... ok
+test_upload_limit_and_outcomes_are_explicit (test_phase9_frontend.Phase9FrontendTests.test_upload_limit_and_outcomes_are_explicit) ... ok
+test_blank_description_and_locator_do_not_drop_rows (test_source_loaders.SourceLoaderTests.test_blank_description_and_locator_do_not_drop_rows) ... ok
+test_missing_profile_columns_and_malformed_rows_fail_read_only (test_source_loaders.SourceLoaderTests.test_missing_profile_columns_and_malformed_rows_fail_read_only) ... ok
+test_real_files_preserve_all_rows_fields_and_origins (test_source_loaders.SourceLoaderTests.test_real_files_preserve_all_rows_fields_and_origins) ... ok
+test_repeated_records_and_cross_file_text_stay_separate (test_source_loaders.SourceLoaderTests.test_repeated_records_and_cross_file_text_stay_separate) ... ok
+test_csv_xlsx_real_sample_equivalence_and_provenance (test_xlsx_loader.XlsxTests.test_csv_xlsx_real_sample_equivalence_and_provenance) ... ok
+test_explicit_sheet_header_and_schema_validation (test_xlsx_loader.XlsxTests.test_explicit_sheet_header_and_schema_validation) ... ok
+test_formulas_numeric_ids_and_other_typed_cells_are_rejected (test_xlsx_loader.XlsxTests.test_formulas_numeric_ids_and_other_typed_cells_are_rejected) ... ok
+test_text_leading_zeros_repeated_and_blank_rows (test_xlsx_loader.XlsxTests.test_text_leading_zeros_repeated_and_blank_rows) ... ok
+System.Management.Automation.RemoteException
+----------------------------------------------------------------------
+Ran 128 tests in 100.699s
+System.Management.Automation.RemoteException
+OK
+{
+  "status": "passed",
+  "workspace": "phase13-demo",
+  "records_inserted": 9245,
+  "phase6_warnings_inserted": 10,
+  "source_pair": [
+    "M000753",
+    "M000925"
+  ],
+  "conflict_pair": [
+    "M000830",
+    "M000834"
+  ],
+  "prototype_code": "SMV-P-1140125BB9BA",
+  "checks": {
+    "all_9245_records_seeded": true,
+    "candidate_contains_verified_pair": true,
+    "pair_outcome_near_duplicate": true,
+    "critical_conflict_blocks_identity": true,
+    "prototype_code_created": true,
+    "both_sources_mapped": true,
+    "governance_history_retained": true,
+    "integration_schemas_same_core": true,
+    "raw_sources_unchanged": true
+  },
+  "raw_sha256_before_and_after": {
+    "data/raw/huggingface/material_description_corpus.csv": "58c837ff0dab3336085bc6e7e984d7ed060b175a7df7440ba3dc037d7f107c95",
+    "data/raw/huggingface/ntpc_material_items.csv": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "data/raw/huggingface/iocl_procurement_plan_items.csv": "6c132ca99a3181427300f77f73558e501aebba52ae4085af657781a4fe58ae17"
+  },
+  "export_sha256": {
+    "registry.json": "b8743433c00dcd3fef6c4278819ee86809ac6d0a83228b0a5f9fd06e2404781a",
+    "source_mappings.csv": "fdd4243364ea6957a5046f4e387268315c0f7bc7fd11151c6402dd4a36feece4",
+    "audit_events.json": "a99182c24d06d8a1e840daa24c004da9664cc9a0fba93a23affce69db2ba6951",
+    "quality_pack.xlsx": "492c29f10aa5e76c8bdc9eb8c7e8a3b510ae0325ea2b6a0e4558d95bb75c79d9"
+  },
+  "python": "3.13.7",
+  "scope": "Local SQLite and demo-token workflow; not managed deployment validation."
+}

@@ -1,0 +1,600 @@
+{
+  "status": "passed",
+  "workspace": "phase13-browser",
+  "health": {
+    "status": "ok",
+    "service": "samanvay",
+    "version": "0.2.0"
+  },
+  "readiness": {
+    "status": "ready",
+    "storage": {
+      "backend": "sqlite-local",
+      "available": true,
+      "durable_for_deployment": false
+    }
+  },
+  "quality_dashboard": {
+    "schema_version": "quality-dashboard-v0.1",
+    "workspace_id": "phase13-browser",
+    "workspace_state_sha256": "a58da8ac64dd2ce5864990cd2fe079e1c7f396ab1bccef2bdc1a07539b1db857",
+    "records": {
+      "loaded": 9245,
+      "status": {
+        "eligible": 9245,
+        "ineligible": 0,
+        "unknown": 0
+      }
+    },
+    "completeness": {
+      "source_organization": {
+        "present": 9245,
+        "missing": 0,
+        "unknown": 0,
+        "total": 9245
+      },
+      "source_record_id": {
+        "present": 9245,
+        "missing": 0,
+        "unknown": 0,
+        "total": 9245
+      },
+      "description": {
+        "present": 9245,
+        "missing": 0,
+        "unknown": 0,
+        "total": 9245
+      },
+      "uom": {
+        "present": 391,
+        "missing": 8854,
+        "unknown": 0,
+        "total": 9245
+      },
+      "category": {
+        "present": 5082,
+        "missing": 4163,
+        "unknown": 0,
+        "total": 9245
+      },
+      "structured_attributes": {
+        "present": 3595,
+        "missing": 0,
+        "unknown": 5650,
+        "total": 9245
+      }
+    },
+    "reviews": {
+      "current_decisions": 1,
+      "approved": 1,
+      "rejected": 0,
+      "deferred_pending": 0,
+      "reconsideration_events": 2,
+      "persisted_review_pairs": 1,
+      "pair_outcomes": {
+        "near_duplicate": 1
+      }
+    },
+    "candidate_metrics": {
+      "persisted_candidate_proposals": null,
+      "status": "not_persisted",
+      "explanation": "Candidate retrieval is generated on demand; no workspace-wide candidate count is claimed.",
+      "active_registry_clusters": 1,
+      "active_registry_cluster_sizes": [
+        2
+      ],
+      "active_functional_relationships": 0
+    },
+    "conflict_rate": {
+      "numerator": 0,
+      "denominator": 1,
+      "rate": 0.0,
+      "scope": "unique unordered pairs represented by current persisted decisions",
+      "metric_kind": "pair-evidence rule output; not accuracy"
+    },
+    "mapping_coverage": {
+      "mapped": 2,
+      "unresolved": 9243,
+      "total": 9245,
+      "rate": 0.00021633315305570578,
+      "historically_revoked_or_reconsidered_sources": 2
+    },
+    "registry": {
+      "active_prototype_entries": 1,
+      "active_mapped_members": 2
+    },
+    "financial_metrics": {
+      "status": "unsupported",
+      "reason": "No persisted transaction price/quantity evidence supports savings or ROI claims."
+    }
+  },
+  "registry": {
+    "items": [
+      {
+        "proposed_code": "SMV-P-F9BD25D2A603",
+        "prototype_status": "prototype_proposed",
+        "member_fingerprint": "719fd2f6d6b608289909dc43b0d024a85e504ee5f370d1841fdb3899b8a2c8b2",
+        "standard_description": "FAMILY=pipe | SIZE_DIMENSION=125NB, 141.3MM, 9.53MM | MATERIAL_GRADE=UNKNOWN | STANDARD=ASTM A312 | PRESSURE=UNKNOWN | VOLTAGE=UNKNOWN | MODEL_PART=UNKNOWN",
+        "readable_description": "Pipe; dimensions/specification values 125NB, 141.3MM, 9.53MM; standard ASTM A312. Unknown: material grade, pressure designation, voltage, model/part.",
+        "active": 1,
+        "created_at": "2026-09-29T21:17:27.928818Z",
+        "updated_at": "2026-09-29T21:17:35.101258Z",
+        "description_evidence": {
+          "fields": {
+            "family": {
+              "evidence": [
+                {
+                  "end": 6,
+                  "rule_id": "family.pipe.explicit",
+                  "source_record_id": "M000753",
+                  "start": 2,
+                  "value_normalized": "pipe",
+                  "value_raw": "PIPE"
+                },
+                {
+                  "end": 4,
+                  "rule_id": "family.pipe.explicit",
+                  "source_record_id": "M000925",
+                  "start": 0,
+                  "value_normalized": "pipe",
+                  "value_raw": "Pipe"
+                }
+              ],
+              "status": "supported",
+              "values": [
+                "pipe"
+              ]
+            },
+            "material_grade": {
+              "evidence": [],
+              "observed_by_source": {
+                "M000753": [],
+                "M000925": []
+              },
+              "status": "unknown",
+              "values": []
+            },
+            "model_part": {
+              "evidence": [],
+              "observed_by_source": {
+                "M000753": [],
+                "M000925": []
+              },
+              "status": "unknown",
+              "values": []
+            },
+            "pressure": {
+              "evidence": [],
+              "observed_by_source": {
+                "M000753": [],
+                "M000925": []
+              },
+              "status": "unknown",
+              "values": []
+            },
+            "size_dimension": {
+              "evidence": [
+                {
+                  "end": 23,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000753",
+                  "start": 17,
+                  "value_normalized": "9.53MM",
+                  "value_raw": "9.53MM"
+                },
+                {
+                  "end": 31,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000753",
+                  "start": 24,
+                  "value_normalized": "141.3MM",
+                  "value_raw": "141.3MM"
+                },
+                {
+                  "end": 37,
+                  "rule_id": "size.nominal",
+                  "source_record_id": "M000753",
+                  "start": 32,
+                  "value_normalized": "125NB",
+                  "value_raw": "125NB"
+                },
+                {
+                  "end": 21,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000925",
+                  "start": 15,
+                  "value_normalized": "9.53MM",
+                  "value_raw": "9.53mm"
+                },
+                {
+                  "end": 29,
+                  "rule_id": "size.metric",
+                  "source_record_id": "M000925",
+                  "start": 22,
+                  "value_normalized": "141.3MM",
+                  "value_raw": "141.3mm"
+                },
+                {
+                  "end": 35,
+                  "rule_id": "size.nominal",
+                  "source_record_id": "M000925",
+                  "start": 30,
+                  "value_normalized": "125NB",
+                  "value_raw": "125nb"
+                }
+              ],
+              "observed_by_source": {
+                "M000753": [
+                  "125NB",
+                  "141.3MM",
+                  "9.53MM"
+                ],
+                "M000925": [
+                  "125NB",
+                  "141.3MM",
+                  "9.53MM"
+                ]
+              },
+              "status": "supported",
+              "values": [
+                "125NB",
+                "141.3MM",
+                "9.53MM"
+              ]
+            },
+            "standard": {
+              "evidence": [
+                {
+                  "end": 16,
+                  "rule_id": "standard.astm",
+                  "source_record_id": "M000753",
+                  "start": 7,
+                  "value_normalized": "ASTM A312",
+                  "value_raw": "ASTM A312"
+                },
+                {
+                  "end": 14,
+                  "rule_id": "standard.astm",
+                  "source_record_id": "M000925",
+                  "start": 5,
+                  "value_normalized": "ASTM A312",
+                  "value_raw": "Astm A312"
+                }
+              ],
+              "observed_by_source": {
+                "M000753": [
+                  "ASTM A312"
+                ],
+                "M000925": [
+                  "ASTM A312"
+                ]
+              },
+              "status": "supported",
+              "values": [
+                "ASTM A312"
+              ]
+            },
+            "voltage": {
+              "evidence": [],
+              "observed_by_source": {
+                "M000753": [],
+                "M000925": []
+              },
+              "status": "unknown",
+              "values": []
+            }
+          },
+          "registry_version": "prototype-registry-v0.1"
+        },
+        "members": [
+          {
+            "source_record_id": "M000753",
+            "membership_status": "active",
+            "organization": "NTPC Limited",
+            "original_description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+            "source_identifiers": {
+              "corpus_id": "M000753",
+              "tender_id": "28971",
+              "tender_reference": ""
+            },
+            "genuine_material_codes": {}
+          },
+          {
+            "source_record_id": "M000925",
+            "membership_status": "active",
+            "organization": "NTPC Limited",
+            "original_description": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+            "source_identifiers": {
+              "corpus_id": "M000925",
+              "tender_id": "28971",
+              "tender_reference": ""
+            },
+            "genuine_material_codes": {}
+          }
+        ]
+      }
+    ],
+    "offset": 0,
+    "limit": 10,
+    "total": 1,
+    "next_offset": null
+  },
+  "decisions": {
+    "items": [
+      {
+        "decision_id": 1,
+        "action": "approve",
+        "relationship_type": "identity",
+        "reason": "Phase 13 browser demo approval using displayed matching pipe evidence",
+        "actor": "local-demo-owner",
+        "proposed_code": "SMV-P-F9BD25D2A603",
+        "resulting_relationship_id": null,
+        "supersedes_decision_id": null,
+        "demonstration": 0,
+        "created_at": "2026-09-29T21:17:27.929568Z",
+        "member_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "is_current": false
+      },
+      {
+        "decision_id": 2,
+        "action": "defer",
+        "relationship_type": "identity",
+        "reason": "Phase 13 browser demo reversible governance check",
+        "actor": "local-demo-owner",
+        "proposed_code": null,
+        "resulting_relationship_id": null,
+        "supersedes_decision_id": 1,
+        "demonstration": 0,
+        "created_at": "2026-09-29T21:17:33.793275Z",
+        "member_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "is_current": false
+      },
+      {
+        "decision_id": 3,
+        "action": "approve",
+        "relationship_type": "identity",
+        "reason": "Phase 13 browser demo restores supported mapping",
+        "actor": "local-demo-owner",
+        "proposed_code": "SMV-P-F9BD25D2A603",
+        "resulting_relationship_id": null,
+        "supersedes_decision_id": 2,
+        "demonstration": 0,
+        "created_at": "2026-09-29T21:17:35.101617Z",
+        "member_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "is_current": true
+      }
+    ],
+    "offset": 0,
+    "limit": 10,
+    "total": 3,
+    "next_offset": null
+  },
+  "audit_events": {
+    "items": [
+      {
+        "event_id": 1,
+        "workspace_id": "phase13-browser",
+        "event_type": "decision_created",
+        "action": "approve",
+        "relationship_type": "identity",
+        "actor": "local-demo-owner",
+        "reason": "Phase 13 browser demo approval using displayed matching pipe evidence",
+        "decision_id": 1,
+        "created_at": "2026-09-29T21:17:27.930917Z",
+        "affected_source_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "input_versions": [
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000753",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          },
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000925",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          }
+        ],
+        "rule_versions": {
+          "attribute_parser_versions": [
+            "technical-attributes-v0.1"
+          ],
+          "model_version": null,
+          "normalization_versions": [
+            "description-normalization-v0.1"
+          ],
+          "pair_evidence_version": "pair-evidence-v0.2",
+          "registry_version": "prototype-registry-v0.1"
+        },
+        "previous_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": null,
+              "status": "unresolved"
+            },
+            "M000925": {
+              "proposed_code": null,
+              "status": "unresolved"
+            }
+          }
+        },
+        "resulting_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            },
+            "M000925": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            }
+          }
+        }
+      },
+      {
+        "event_id": 2,
+        "workspace_id": "phase13-browser",
+        "event_type": "decision_reconsidered",
+        "action": "defer",
+        "relationship_type": "identity",
+        "actor": "local-demo-owner",
+        "reason": "Phase 13 browser demo reversible governance check",
+        "decision_id": 2,
+        "created_at": "2026-09-29T21:17:33.794471Z",
+        "affected_source_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "input_versions": [
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000753",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          },
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000925",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          }
+        ],
+        "rule_versions": {
+          "attribute_parser_versions": [
+            "technical-attributes-v0.1"
+          ],
+          "model_version": null,
+          "normalization_versions": [
+            "description-normalization-v0.1"
+          ],
+          "pair_evidence_version": "pair-evidence-v0.2",
+          "registry_version": "prototype-registry-v0.1"
+        },
+        "previous_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            },
+            "M000925": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            }
+          }
+        },
+        "resulting_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": null,
+              "status": "unresolved"
+            },
+            "M000925": {
+              "proposed_code": null,
+              "status": "unresolved"
+            }
+          }
+        }
+      },
+      {
+        "event_id": 3,
+        "workspace_id": "phase13-browser",
+        "event_type": "decision_reconsidered",
+        "action": "approve",
+        "relationship_type": "identity",
+        "actor": "local-demo-owner",
+        "reason": "Phase 13 browser demo restores supported mapping",
+        "decision_id": 3,
+        "created_at": "2026-09-29T21:17:35.102578Z",
+        "affected_source_ids": [
+          "M000753",
+          "M000925"
+        ],
+        "input_versions": [
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000753",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          },
+          {
+            "mapping_id": "material-candidates-v0.1",
+            "schema_version": "0.1",
+            "source_record_id": "M000925",
+            "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6"
+          }
+        ],
+        "rule_versions": {
+          "attribute_parser_versions": [
+            "technical-attributes-v0.1"
+          ],
+          "model_version": null,
+          "normalization_versions": [
+            "description-normalization-v0.1"
+          ],
+          "pair_evidence_version": "pair-evidence-v0.2",
+          "registry_version": "prototype-registry-v0.1"
+        },
+        "previous_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": null,
+              "status": "unresolved"
+            },
+            "M000925": {
+              "proposed_code": null,
+              "status": "unresolved"
+            }
+          }
+        },
+        "resulting_state": {
+          "functional_relationships": [],
+          "mappings": {
+            "M000753": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            },
+            "M000925": {
+              "proposed_code": "SMV-P-F9BD25D2A603",
+              "status": "mapped_to_prototype"
+            }
+          }
+        }
+      }
+    ],
+    "offset": 0,
+    "limit": 20,
+    "total": 3,
+    "next_offset": null
+  },
+  "screenshots": {
+    "01_quality_dashboard.png": "2becf88d4a8967122ed0458e2f41f7604cdfa06765a0446bdb3cea68d21658e2",
+    "02_pair_evidence.png": "d3cf855c13267ed029fe5c1764cc51ddf1509771ec2a4b3a45c55d13e2e98491",
+    "03_registry_mapping.png": "eb2ecd6b5b981de39b2ac790a3d0c481b477eb7cbb8fb8f90a5af683d70ac35f",
+    "04_governance_history.png": "4f859c163af7755348e52ed3658f781ee609fb936be4107dca6786b0eec7d428",
+    "05_integration_preview.png": "7d06e8a1515c895755bf06b2f1f79d074ac977a98e5dd126242b840635ef9752"
+  },
+  "download": {
+    "name": "samanvay_quality_pack.xlsx",
+    "sha256": "e347d317e049b0d6adec3fee597c13b81a62b3b9b69cd096556d8da994a9e9bb",
+    "bytes": 811465
+  },
+  "scope": "Headless Microsoft Edge against local SQLite and demo authentication; managed deployment not tested."
+}

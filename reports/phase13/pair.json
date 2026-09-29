@@ -1,0 +1,262 @@
+{
+  "comparison_version": "pair-evidence-v0.2",
+  "left": {
+    "source_record_id": "M000753",
+    "source_organization": "NTPC Limited",
+    "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,"
+  },
+  "right": {
+    "source_record_id": "M000925",
+    "source_organization": "NTPC Limited",
+    "description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb"
+  },
+  "retrieval": null,
+  "supporting_text_evidence": {
+    "exact_normalized_text": false,
+    "shared_useful_tokens": [
+      "125nb",
+      "141.3mm",
+      "9.53mm",
+      "a312",
+      "astm",
+      "pipe"
+    ],
+    "token_jaccard": 1.0,
+    "character_trigram_dice": 0.955224,
+    "left_normalized_text": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+    "right_normalized_text": "Pipe Astm A312, 9.53mm, 141.3mm, 125nb"
+  },
+  "field_comparisons": {
+    "family": {
+      "field": "family",
+      "status": "compatible",
+      "compatible": true,
+      "left_value": "pipe",
+      "right_value": "pipe",
+      "conflicts": [],
+      "missing": [],
+      "left_evidence": {
+        "end": 6,
+        "rule_id": "family.pipe.explicit",
+        "start": 2,
+        "value_normalized": "pipe",
+        "value_raw": "PIPE",
+        "source_record_id": "M000753"
+      },
+      "right_evidence": {
+        "end": 4,
+        "rule_id": "family.pipe.explicit",
+        "start": 0,
+        "value_normalized": "pipe",
+        "value_raw": "Pipe",
+        "source_record_id": "M000925"
+      }
+    },
+    "size_dimension": {
+      "field": "size_dimension",
+      "status": "compatible",
+      "compatible": [
+        {
+          "comparison_type": "linear_dimension_mm",
+          "values": [
+            "141.3",
+            "9.53"
+          ],
+          "left_evidence": [
+            {
+              "end": 23,
+              "rule_id": "size.metric",
+              "start": 17,
+              "value_normalized": "9.53MM",
+              "value_raw": "9.53MM",
+              "source_record_id": "M000753",
+              "comparison_type": "linear_dimension_mm",
+              "canonical_value": "9.53"
+            },
+            {
+              "end": 31,
+              "rule_id": "size.metric",
+              "start": 24,
+              "value_normalized": "141.3MM",
+              "value_raw": "141.3MM",
+              "source_record_id": "M000753",
+              "comparison_type": "linear_dimension_mm",
+              "canonical_value": "141.3"
+            }
+          ],
+          "right_evidence": [
+            {
+              "end": 21,
+              "rule_id": "size.metric",
+              "start": 15,
+              "value_normalized": "9.53MM",
+              "value_raw": "9.53mm",
+              "source_record_id": "M000925",
+              "comparison_type": "linear_dimension_mm",
+              "canonical_value": "9.53"
+            },
+            {
+              "end": 29,
+              "rule_id": "size.metric",
+              "start": 22,
+              "value_normalized": "141.3MM",
+              "value_raw": "141.3mm",
+              "source_record_id": "M000925",
+              "comparison_type": "linear_dimension_mm",
+              "canonical_value": "141.3"
+            }
+          ]
+        },
+        {
+          "comparison_type": "nominal_bore_mm",
+          "values": [
+            "125"
+          ],
+          "left_evidence": [
+            {
+              "end": 37,
+              "rule_id": "size.nominal",
+              "start": 32,
+              "value_normalized": "125NB",
+              "value_raw": "125NB",
+              "source_record_id": "M000753",
+              "comparison_type": "nominal_bore_mm",
+              "canonical_value": "125"
+            }
+          ],
+          "right_evidence": [
+            {
+              "end": 35,
+              "rule_id": "size.nominal",
+              "start": 30,
+              "value_normalized": "125NB",
+              "value_raw": "125nb",
+              "source_record_id": "M000925",
+              "comparison_type": "nominal_bore_mm",
+              "canonical_value": "125"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "uncertain": [],
+      "not_comparable": []
+    },
+    "material_grade": {
+      "field": "material_grade",
+      "status": "unknown",
+      "compatible": [],
+      "conflicts": [],
+      "missing": [
+        "left",
+        "right"
+      ],
+      "uncertain": [],
+      "not_comparable": []
+    },
+    "standard": {
+      "field": "standard",
+      "status": "compatible",
+      "compatible": [
+        {
+          "comparison_type": "standard_astm",
+          "values": [
+            "ASTMA312"
+          ],
+          "left_evidence": [
+            {
+              "end": 16,
+              "rule_id": "standard.astm",
+              "start": 7,
+              "value_normalized": "ASTM A312",
+              "value_raw": "ASTM A312",
+              "source_record_id": "M000753",
+              "comparison_type": "standard_astm",
+              "canonical_value": "ASTMA312"
+            }
+          ],
+          "right_evidence": [
+            {
+              "end": 14,
+              "rule_id": "standard.astm",
+              "start": 5,
+              "value_normalized": "ASTM A312",
+              "value_raw": "Astm A312",
+              "source_record_id": "M000925",
+              "comparison_type": "standard_astm",
+              "canonical_value": "ASTMA312"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "missing": [],
+      "uncertain": [],
+      "not_comparable": []
+    },
+    "pressure": {
+      "field": "pressure",
+      "status": "unknown",
+      "compatible": [],
+      "conflicts": [],
+      "missing": [
+        "left",
+        "right"
+      ],
+      "uncertain": [],
+      "not_comparable": []
+    },
+    "voltage": {
+      "field": "voltage",
+      "status": "unknown",
+      "compatible": [],
+      "conflicts": [],
+      "missing": [
+        "left",
+        "right"
+      ],
+      "uncertain": [],
+      "not_comparable": []
+    },
+    "model_part": {
+      "field": "model_part",
+      "status": "unknown",
+      "compatible": [],
+      "conflicts": [],
+      "missing": [
+        "left",
+        "right"
+      ],
+      "uncertain": [],
+      "not_comparable": []
+    }
+  },
+  "missing_or_uncertain_attributes": [
+    "material_grade",
+    "pressure",
+    "voltage",
+    "model_part"
+  ],
+  "outcome": {
+    "label": "near_duplicate",
+    "status": "proposed_outcome",
+    "evidence_disposition": "supported_near_duplicate",
+    "reason_codes": [
+      "text.strong_variant",
+      "family.compatible",
+      "size_dimension.compatible",
+      "standard.compatible"
+    ],
+    "explanation": "The wording is a strong variant and supported specifications do not conflict.",
+    "review_required": true,
+    "qualified_reviewer_required": false,
+    "identity_merge_blocked": false,
+    "critical_unknown_or_uncertain_fields": [
+      "material_grade",
+      "pressure",
+      "voltage"
+    ],
+    "automatic_action": null
+  }
+}

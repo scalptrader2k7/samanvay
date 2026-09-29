@@ -1,0 +1,23 @@
+{
+  "phase": "8",
+  "status": "implementation_complete_deployment_pending_account_setup",
+  "local_source_records_checked": 9245,
+  "local_phase6_warnings_checked": 10,
+  "local_api_checks": {
+    "health": 200,
+    "readiness": 200,
+    "materials": 200,
+    "lexical_candidates": 200,
+    "dashboard": 200
+  },
+  "local_storage": "sqlite per workspace",
+  "deployment_storage": "Neon-compatible PostgreSQL transactional workspace image",
+  "deployed_filesystem_required": false,
+  "authentication": "managed OIDC in deployment; local demo token forbidden in deployment mode",
+  "vercel_cli": "59.11.7",
+  "vercel_project_linked": false,
+  "managed_database_configured": false,
+  "managed_oidc_configured": false,
+  "public_url": null,
+  "phase9_started": false
+}

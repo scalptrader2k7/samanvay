@@ -1,0 +1,17 @@
+{
+  "phase": "6",
+  "status": "preparation_complete_validation_pending",
+  "directed_phase5_pairs": 89381,
+  "unique_unordered_pairs": 63531,
+  "review_sample_pairs": 100,
+  "automated_outcome_quota_each": 20,
+  "cross_organization_pairs": 8,
+  "insufficient_evidence_pairs": 18,
+  "supported_incompatibility_pairs": 22,
+  "critical_conflict_pairs": 20,
+  "human_labeled_pairs": 0,
+  "performance_metrics_reported": false,
+  "open_error_log_entries": 10,
+  "next_phase": "Phase 7 prototype registry and source-to-registry mappings",
+  "phase7_started": false
+}

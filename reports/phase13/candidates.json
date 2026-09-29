@@ -1,0 +1,348 @@
+{
+  "retrieval_type": "bounded_lexical",
+  "identity_decision": false,
+  "items": [
+    {
+      "status": "candidate_only",
+      "retrieval_version": "lexical-retrieval-v0.1",
+      "query_source_record_id": "M000753",
+      "candidate_source_record_id": "M000925",
+      "candidate_organization": "NTPC Limited",
+      "candidate_description_original": "Pipe Astm A312,9.53mm,141.3mm,125nb",
+      "candidate_family": "pipe",
+      "candidate_attributes": {
+        "material_grade": [],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 21,
+            "rule_id": "size.metric",
+            "start": 15,
+            "value_normalized": "9.53MM",
+            "value_raw": "9.53mm"
+          },
+          {
+            "end": 29,
+            "rule_id": "size.metric",
+            "start": 22,
+            "value_normalized": "141.3MM",
+            "value_raw": "141.3mm"
+          },
+          {
+            "end": 35,
+            "rule_id": "size.nominal",
+            "start": 30,
+            "value_normalized": "125NB",
+            "value_raw": "125nb"
+          }
+        ],
+        "standard": [
+          {
+            "end": 14,
+            "rule_id": "standard.astm",
+            "start": 5,
+            "value_normalized": "ASTM A312",
+            "value_raw": "Astm A312"
+          }
+        ],
+        "voltage": []
+      },
+      "retrieval_score": 0.972239,
+      "reasons": [
+        {
+          "method": "exact_source_identifier",
+          "field": "tender_id",
+          "value": "28971"
+        },
+        {
+          "method": "shared_useful_tokens",
+          "tokens": [
+            "125nb",
+            "141.3mm",
+            "9.53mm",
+            "a312",
+            "astm"
+          ],
+          "token_jaccard": 1.0
+        },
+        {
+          "method": "fuzzy_character_trigrams",
+          "score": 0.955224
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "status": "candidate_only",
+      "retrieval_version": "lexical-retrieval-v0.1",
+      "query_source_record_id": "M000753",
+      "candidate_source_record_id": "M000924",
+      "candidate_organization": "NTPC Limited",
+      "candidate_description_original": "Pipe Astm A312,12.70mm,323.9mm,300nb",
+      "candidate_family": "pipe",
+      "candidate_attributes": {
+        "material_grade": [],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 22,
+            "rule_id": "size.metric",
+            "start": 15,
+            "value_normalized": "12.70MM",
+            "value_raw": "12.70mm"
+          },
+          {
+            "end": 30,
+            "rule_id": "size.metric",
+            "start": 23,
+            "value_normalized": "323.9MM",
+            "value_raw": "323.9mm"
+          },
+          {
+            "end": 36,
+            "rule_id": "size.nominal",
+            "start": 31,
+            "value_normalized": "300NB",
+            "value_raw": "300nb"
+          }
+        ],
+        "standard": [
+          {
+            "end": 14,
+            "rule_id": "standard.astm",
+            "start": 5,
+            "value_normalized": "ASTM A312",
+            "value_raw": "Astm A312"
+          }
+        ],
+        "voltage": []
+      },
+      "retrieval_score": 0.483478,
+      "reasons": [
+        {
+          "method": "exact_source_identifier",
+          "field": "tender_id",
+          "value": "28971"
+        },
+        {
+          "method": "shared_useful_tokens",
+          "tokens": [
+            "a312",
+            "astm"
+          ],
+          "token_jaccard": 0.333333
+        },
+        {
+          "method": "fuzzy_character_trigrams",
+          "score": 0.521739
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "status": "candidate_only",
+      "retrieval_version": "lexical-retrieval-v0.1",
+      "query_source_record_id": "M000753",
+      "candidate_source_record_id": "M000979",
+      "candidate_organization": "NTPC Limited",
+      "candidate_description_original": "TP304L,80S,32MM , PIPE SEAMLESS,SS,A312",
+      "candidate_family": "pipe",
+      "candidate_attributes": {
+        "material_grade": [
+          {
+            "end": 6,
+            "rule_id": "grade.stainless",
+            "start": 0,
+            "value_normalized": "TP304L",
+            "value_raw": "TP304L"
+          }
+        ],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 10,
+            "rule_id": "size.schedule",
+            "start": 7,
+            "value_normalized": "80S",
+            "value_raw": "80S"
+          },
+          {
+            "end": 15,
+            "rule_id": "size.metric",
+            "start": 11,
+            "value_normalized": "32MM",
+            "value_raw": "32MM"
+          }
+        ],
+        "standard": [],
+        "voltage": []
+      },
+      "retrieval_score": 0.282222,
+      "reasons": [
+        {
+          "method": "exact_source_identifier",
+          "field": "tender_id",
+          "value": "28971"
+        },
+        {
+          "method": "shared_useful_tokens",
+          "tokens": [
+            "a312"
+          ],
+          "token_jaccard": 0.181818
+        },
+        {
+          "method": "fuzzy_character_trigrams",
+          "score": 0.277778
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "status": "candidate_only",
+      "retrieval_version": "lexical-retrieval-v0.1",
+      "query_source_record_id": "M000753",
+      "candidate_source_record_id": "M000980",
+      "candidate_organization": "NTPC Limited",
+      "candidate_description_original": "TP304L,80S,40MM , PIPE SEAMLESS,SS,A312",
+      "candidate_family": "pipe",
+      "candidate_attributes": {
+        "material_grade": [
+          {
+            "end": 6,
+            "rule_id": "grade.stainless",
+            "start": 0,
+            "value_normalized": "TP304L",
+            "value_raw": "TP304L"
+          }
+        ],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 10,
+            "rule_id": "size.schedule",
+            "start": 7,
+            "value_normalized": "80S",
+            "value_raw": "80S"
+          },
+          {
+            "end": 15,
+            "rule_id": "size.metric",
+            "start": 11,
+            "value_normalized": "40MM",
+            "value_raw": "40MM"
+          }
+        ],
+        "standard": [],
+        "voltage": []
+      },
+      "retrieval_score": 0.282222,
+      "reasons": [
+        {
+          "method": "exact_source_identifier",
+          "field": "tender_id",
+          "value": "28971"
+        },
+        {
+          "method": "shared_useful_tokens",
+          "tokens": [
+            "a312"
+          ],
+          "token_jaccard": 0.181818
+        },
+        {
+          "method": "fuzzy_character_trigrams",
+          "score": 0.277778
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "status": "candidate_only",
+      "retrieval_version": "lexical-retrieval-v0.1",
+      "query_source_record_id": "M000753",
+      "candidate_source_record_id": "M000981",
+      "candidate_organization": "NTPC Limited",
+      "candidate_description_original": "TP304L,80S,50MM , PIPE SEAMLESS,SS,A312",
+      "candidate_family": "pipe",
+      "candidate_attributes": {
+        "material_grade": [
+          {
+            "end": 6,
+            "rule_id": "grade.stainless",
+            "start": 0,
+            "value_normalized": "TP304L",
+            "value_raw": "TP304L"
+          }
+        ],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 10,
+            "rule_id": "size.schedule",
+            "start": 7,
+            "value_normalized": "80S",
+            "value_raw": "80S"
+          },
+          {
+            "end": 15,
+            "rule_id": "size.metric",
+            "start": 11,
+            "value_normalized": "50MM",
+            "value_raw": "50MM"
+          }
+        ],
+        "standard": [],
+        "voltage": []
+      },
+      "retrieval_score": 0.282222,
+      "reasons": [
+        {
+          "method": "exact_source_identifier",
+          "field": "tender_id",
+          "value": "28971"
+        },
+        {
+          "method": "shared_useful_tokens",
+          "tokens": [
+            "a312"
+          ],
+          "token_jaccard": 0.181818
+        },
+        {
+          "method": "fuzzy_character_trigrams",
+          "score": 0.277778
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "diagnostics": {
+    "query_id": "M000753",
+    "selected_tokens": [
+      "141.3mm",
+      "9.53mm",
+      "125nb",
+      "a312",
+      "astm",
+      "pipe"
+    ],
+    "postings_visited": 33,
+    "candidate_pool_size": 43,
+    "max_rare_tokens": 8,
+    "posting_cap": 250,
+    "pool_cap": 500,
+    "elapsed_ms": 0.16309996135532856,
+    "all_pairs_compared": false,
+    "fuzzy_comparisons": 43,
+    "returned": 5,
+    "top_k": 5,
+    "cross_organization_only": false,
+    "total_elapsed_ms": 0.8132000220939517
+  }
+}

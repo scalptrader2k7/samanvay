@@ -1,0 +1,25 @@
+{
+  "decision_id": 3,
+  "action": "approve",
+  "relationship_type": "identity",
+  "proposed_code": "SMV-P-B0CE172DAB9E",
+  "functional_relationship_id": null,
+  "member_ids": [
+    "M000753",
+    "M000925"
+  ],
+  "pair_checks": [
+    {
+      "left_source_record_id": "M000753",
+      "right_source_record_id": "M000925",
+      "outcome": "near_duplicate",
+      "evidence_disposition": "supported_near_duplicate",
+      "critical_conflicts": [],
+      "review_required": true
+    }
+  ],
+  "review_warnings": [],
+  "audit_event_id": 3,
+  "demonstration": true,
+  "idempotent_replay": false
+}

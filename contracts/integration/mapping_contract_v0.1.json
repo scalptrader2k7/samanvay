@@ -1,0 +1,30 @@
+{
+  "contract_version": "samanvay-mapping-v0.1",
+  "allowed_keys": [
+    "mapping_id",
+    "columns",
+    "identifiers",
+    "specifications",
+    "organization_constant",
+    "legacy_code_evidence"
+  ],
+  "transformations": [
+    "identity text mapping",
+    "blank-to-null with a traceable issue",
+    "existing Phase 3 derivation only after validation"
+  ],
+  "validation": [
+    "nonblank unique headers",
+    "all mapped columns exist",
+    "source values are strings",
+    "organization, source row ID and description required for matching workflow",
+    "duplicate source row IDs block loading but rows remain in validation output"
+  ],
+  "missing": "Omitted optional mappings and blank values remain unknown.",
+  "erp_boundary": {
+    "reads_files": true,
+    "previews_in_memory": true,
+    "writes_erp": false,
+    "preview_persists_workspace": false
+  }
+}

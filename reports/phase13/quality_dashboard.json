@@ -1,0 +1,94 @@
+{
+  "schema_version": "quality-dashboard-v0.1",
+  "workspace_id": "phase13-demo",
+  "workspace_state_sha256": "5e34e43196b30d2904769fd6bf7a278d844fa53a71f09a4c3b8718ff67070a68",
+  "records": {
+    "loaded": 9245,
+    "status": {
+      "eligible": 9245,
+      "ineligible": 0,
+      "unknown": 0
+    }
+  },
+  "completeness": {
+    "source_organization": {
+      "present": 9245,
+      "missing": 0,
+      "unknown": 0,
+      "total": 9245
+    },
+    "source_record_id": {
+      "present": 9245,
+      "missing": 0,
+      "unknown": 0,
+      "total": 9245
+    },
+    "description": {
+      "present": 9245,
+      "missing": 0,
+      "unknown": 0,
+      "total": 9245
+    },
+    "uom": {
+      "present": 391,
+      "missing": 8854,
+      "unknown": 0,
+      "total": 9245
+    },
+    "category": {
+      "present": 5082,
+      "missing": 4163,
+      "unknown": 0,
+      "total": 9245
+    },
+    "structured_attributes": {
+      "present": 3595,
+      "missing": 0,
+      "unknown": 5650,
+      "total": 9245
+    }
+  },
+  "reviews": {
+    "current_decisions": 1,
+    "approved": 1,
+    "rejected": 0,
+    "deferred_pending": 0,
+    "reconsideration_events": 2,
+    "persisted_review_pairs": 1,
+    "pair_outcomes": {
+      "near_duplicate": 1
+    }
+  },
+  "candidate_metrics": {
+    "persisted_candidate_proposals": null,
+    "status": "not_persisted",
+    "explanation": "Candidate retrieval is generated on demand; no workspace-wide candidate count is claimed.",
+    "active_registry_clusters": 1,
+    "active_registry_cluster_sizes": [
+      2
+    ],
+    "active_functional_relationships": 0
+  },
+  "conflict_rate": {
+    "numerator": 0,
+    "denominator": 1,
+    "rate": 0.0,
+    "scope": "unique unordered pairs represented by current persisted decisions",
+    "metric_kind": "pair-evidence rule output; not accuracy"
+  },
+  "mapping_coverage": {
+    "mapped": 2,
+    "unresolved": 9243,
+    "total": 9245,
+    "rate": 0.00021633315305570578,
+    "historically_revoked_or_reconsidered_sources": 2
+  },
+  "registry": {
+    "active_prototype_entries": 1,
+    "active_mapped_members": 2
+  },
+  "financial_metrics": {
+    "status": "unsupported",
+    "reason": "No persisted transaction price/quantity evidence supports savings or ROI claims."
+  }
+}

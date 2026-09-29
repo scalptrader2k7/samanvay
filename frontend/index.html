@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Samanvay Reviewer</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#status" aria-label="Samanvay home">
+      <span class="brand-mark">S</span><span>Samanvay</span><small>Reviewer workspace</small>
+    </a>
+    <form id="connection-form" class="connection-form">
+      <label>Workspace <input id="workspace" value="public-demo" pattern="[a-z][a-z0-9_-]{2,63}" required></label>
+      <label>Access token <input id="token" type="password" autocomplete="off" placeholder="Optional for public read"></label>
+      <button class="button primary" type="submit">Connect</button>
+    </form>
+  </header>
+
+  <div class="app-layout">
+    <nav class="sidebar" aria-label="Reviewer views">
+      <button class="nav-item active" data-view="status">Quality dashboard</button>
+      <button class="nav-item" data-view="search">Materials</button>
+      <button class="nav-item" data-view="review">Review queue <span id="queue-count" class="count">0</span></button>
+      <button class="nav-item" data-view="registry">Registry</button>
+      <button class="nav-item" data-view="governance">Governance</button>
+      <button class="nav-item" data-view="integration">Integration</button>
+      <div class="sidebar-note">
+        <strong id="access-mode">Public read</strong>
+        <span id="workspace-label">public-demo</span>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section id="view-status" class="view active-view">
+        <div class="page-heading">
+          <div><p class="eyebrow">Workspace quality</p><h1>Quality dashboard</h1></div>
+          <button id="refresh-status" class="button secondary">Refresh</button>
+        </div>
+        <div id="service-banner" class="notice neutral">Connect to load service status.</div>
+        <div id="status-cards" class="metric-grid" aria-live="polite"></div>
+        <div class="panel split-panel">
+          <div>
+            <h2>Source ingestion</h2>
+            <p>Records in this workspace are seeded by an authenticated administrator through the Phase 8 service utility.</p>
+            <button class="button secondary" disabled title="No upload endpoint exists in Phase 8">Upload unavailable in this API</button>
+          </div>
+          <div class="truth-box">
+            <strong>Why this is disabled</strong>
+            <p>The current backend has no upload endpoint. This interface will not imply that a local file was accepted when it was not.</p>
+          </div>
+        </div>
+        <div class="quality-grid">
+          <section class="panel">
+            <div class="panel-heading"><h2>Persisted-field completeness</h2><span class="muted">Present, missing and unknown are separate.</span></div>
+            <div class="table-wrap"><table><thead><tr><th>Field</th><th>Present</th><th>Missing</th><th>Unknown</th><th>Total</th></tr></thead><tbody id="completeness-body"></tbody></table></div>
+          </section>
+          <section class="panel"><div class="panel-heading"><h2>Review and candidate state</h2></div><div id="review-quality"></div></section>
+          <section class="panel"><div class="panel-heading"><h2>Conflict rule output</h2></div><div id="conflict-quality"></div></section>
+          <section class="panel"><div class="panel-heading"><h2>Mapping coverage</h2></div><div id="mapping-quality"></div></section>
+        </div>
+        <section class="panel">
+          <div class="panel-heading"><div><h2>Reproducible exports</h2><span id="export-scope" class="muted"></span></div></div>
+          <div class="export-groups">
+            <div><strong>Current registry</strong><p class="muted">Prototype entries and member source IDs.</p><div class="action-row"><button class="button secondary export" data-dataset="registry" data-format="csv">CSV</button><button class="button secondary export" data-dataset="registry" data-format="json">JSON</button></div></div>
+            <div><strong>Current mappings</strong><p class="muted">Current source-to-prototype state; no history mixed in.</p><div class="action-row"><button class="button secondary export" data-dataset="source-mappings" data-format="csv">CSV</button><button class="button secondary export" data-dataset="source-mappings" data-format="json">JSON</button></div></div>
+            <div><strong>Quality workbook</strong><p class="muted">Manifest, metrics, completeness, registry and current mappings.</p><div class="action-row"><button class="button primary export" data-dataset="quality-pack" data-format="xlsx">Excel</button></div></div>
+            <div><strong>Separate history</strong><p class="muted">Governance history, separate from current state.</p><div class="action-row"><button class="button secondary export" data-dataset="audit-events" data-format="json">Audit JSON</button><button class="button secondary export" data-dataset="mapping-history" data-format="csv">Mapping history CSV</button></div></div>
+          </div>
+          <div id="financial-limit" class="truth-box"></div>
+        </section>
+      </section>
+
+      <section id="view-search" class="view">
+        <div class="page-heading"><div><p class="eyebrow">Find source records</p><h1>Material search</h1></div></div>
+        <form id="search-form" class="search-bar">
+          <input id="search-query" minlength="2" maxlength="200" placeholder="Search descriptions, source IDs or organization">
+          <button class="button primary">Search</button>
+          <button id="browse-materials" class="button secondary" type="button">Browse first page</button>
+        </form>
+        <div class="panel table-panel">
+          <div class="panel-heading"><h2>Source materials</h2><span id="search-summary" class="muted">No results loaded</span></div>
+          <div class="table-wrap"><table><thead><tr><th>Source ID</th><th>Organization</th><th>Family</th><th>Original description</th><th></th></tr></thead><tbody id="material-results"></tbody></table></div>
+          <div id="search-pagination" class="pagination"></div>
+        </div>
+      </section>
+
+      <section id="view-review" class="view">
+        <div class="page-heading">
+          <div><p class="eyebrow">Traceable proposals</p><h1>Review workspace</h1></div>
+          <span class="muted">Candidate ranking is retrieval evidence, not a match decision.</span>
+        </div>
+        <div class="outcome-legend" aria-label="Pair outcome meanings">
+          <span class="badge exact_duplicate">Exact duplicate</span>
+          <span class="badge near_duplicate">Near duplicate</span>
+          <span class="badge possible_functional_equivalent">Possible equivalent</span>
+          <span class="badge conflict">Conflict</span>
+          <span class="badge no_match">No match</span>
+        </div>
+        <div class="review-layout">
+          <aside class="panel queue-panel">
+            <div class="panel-heading"><h2>Working candidate queue</h2></div>
+            <p id="queue-context" class="muted">Choose a material from search to retrieve candidates.</p>
+            <div id="candidate-queue"></div>
+          </aside>
+          <div class="review-main">
+            <div id="comparison-empty" class="panel empty-state"><h2>No pair selected</h2><p>Open a candidate to compare original source text and supported technical evidence.</p></div>
+            <div id="comparison-workspace" hidden>
+              <div id="outcome-strip" class="outcome-strip"></div>
+              <div id="source-comparison" class="source-grid"></div>
+              <section class="panel"><div class="panel-heading"><h2>Field-by-field evidence</h2><span class="muted">Unknown never means agreement.</span></div><div class="table-wrap"><table><thead><tr><th>Field</th><th>Assessment</th><th>Left evidence</th><th>Right evidence</th><th>Reason</th></tr></thead><tbody id="evidence-body"></tbody></table></div></section>
+              <section id="decision-panel" class="panel decision-panel">
+                <div class="panel-heading"><h2>Reviewer action</h2><span id="write-access" class="muted"></span></div>
+                <label>Decision reason<textarea id="decision-reason" minlength="5" maxlength="1000" placeholder="State the source evidence that supports this action"></textarea></label>
+                <div class="action-row">
+                  <button id="approve-action" class="button primary">Approve identity</button>
+                  <button id="reject-action" class="button danger">Reject</button>
+                  <button id="defer-action" class="button secondary">Defer</button>
+                </div>
+                <p id="decision-help" class="muted"></p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <section class="panel decisions-panel"><div class="panel-heading"><h2>Decision history</h2><button id="refresh-decisions" class="button secondary">Refresh</button></div><div id="decision-history"></div></section>
+      </section>
+
+      <section id="view-registry" class="view">
+        <div class="page-heading"><div><p class="eyebrow">Prototype identities</p><h1>Proposed registry and mappings</h1></div><button id="refresh-registry" class="button secondary">Refresh</button></div>
+        <div id="registry-summary" class="metric-grid"></div>
+        <div id="registry-list" class="registry-list"></div>
+        <section class="panel">
+          <div class="panel-heading"><h2>Mapping preview</h2><div class="action-row"><button class="button secondary export" data-dataset="source-mappings" data-format="csv">CSV</button><button class="button secondary export" data-dataset="source-mappings" data-format="json">JSON</button></div></div>
+          <div class="table-wrap"><table><thead><tr><th>Source ID</th><th>Organization</th><th>Original description</th><th>Status</th><th>Proposed code</th><th>Legacy code</th></tr></thead><tbody id="mapping-body"></tbody></table></div>
+        </section>
+      </section>
+
+      <section id="view-governance" class="view">
+        <div class="page-heading">
+          <div><p class="eyebrow">Append-only traceability</p><h1>Governance and audit</h1></div>
+          <button id="refresh-governance" class="button secondary">Refresh</button>
+        </div>
+        <div id="governance-access" class="notice neutral"></div>
+        <form id="audit-filter" class="search-bar">
+          <input id="audit-source-id" maxlength="128" placeholder="Filter exact source ID, e.g. M000753">
+          <button class="button primary">Filter history</button>
+          <button id="clear-audit-filter" class="button secondary" type="button">Clear</button>
+        </form>
+        <section class="panel decisions-panel">
+          <div class="panel-heading"><h2>Governance event timeline</h2><span id="audit-summary" class="muted"></span></div>
+          <div id="audit-history"></div>
+        </section>
+        <section class="panel table-panel">
+          <div class="panel-heading"><h2>Mapping change history</h2><span class="muted">Previous states are retained.</span></div>
+          <div class="table-wrap"><table><thead><tr><th>Source ID</th><th>Previous</th><th>Result</th><th>Actor / time</th><th>Reason</th></tr></thead><tbody id="mapping-history-body"></tbody></table></div>
+        </section>
+      </section>
+
+      <section id="view-integration" class="view">
+        <div class="page-heading"><div><p class="eyebrow">Read-only boundary</p><h1>CPSE / SAP integration preview</h1></div></div>
+        <div class="notice"><strong>No SAP or ERP writes.</strong> This preview validates a file shape in memory and does not persist records or change the workspace.</div>
+        <div class="integration-grid">
+          <section class="panel">
+            <h2>Choose a supplied schema</h2>
+            <label>Example <select id="integration-example"></select></label>
+            <div class="action-row"><button id="validate-integration" class="button primary">Validate preview</button><a id="download-template" class="button secondary" href="#">Download header template</a></div>
+            <p class="muted">The CPSE/SAP-shaped example uses real source descriptions. Blank material codes and specifications remain unknown.</p>
+          </section>
+          <section class="panel">
+            <h2>Boundary</h2><div id="integration-boundary" class="metric-list"></div>
+          </section>
+        </div>
+        <section class="panel table-panel"><div class="panel-heading"><h2>Explicit field mapping</h2><span class="muted">Identity text mapping only</span></div><div class="table-wrap"><table><thead><tr><th>Source column</th><th>Canonical field</th><th>Missing behavior</th></tr></thead><tbody id="integration-mapping"></tbody></table></div></section>
+        <div id="integration-result" class="panel"><p class="muted">Select an example and validate it to inspect readiness, issues and retained source evidence.</p></div>
+      </section>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

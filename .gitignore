@@ -4,6 +4,10 @@
 /output/phase3/
 /output/phase3-v0.1/
 /output/phase4-v0.1/
+/output/phase5-v0.1/
+/output/phase6-v0.1/
+/output/phase7-v0.1/
+/.local/
 __pycache__/
 *.py[cod]
 *$py.class
@@ -56,6 +60,7 @@ dmypy.json
 # Local environment & secrets
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 *.pfx
@@ -85,3 +90,5 @@ ehthumbs_vista.db
 ._*
 .Spotlight-V100
 .Trashes
+
+reports/phase13/storage/

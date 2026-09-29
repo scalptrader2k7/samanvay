@@ -1,0 +1,16 @@
+{
+  "decision_id": 2,
+  "action": "defer",
+  "relationship_type": "identity",
+  "proposed_code": null,
+  "functional_relationship_id": null,
+  "member_ids": [
+    "M000753",
+    "M000925"
+  ],
+  "pair_checks": [],
+  "review_warnings": [],
+  "audit_event_id": 2,
+  "demonstration": true,
+  "idempotent_replay": false
+}

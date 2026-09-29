@@ -1,0 +1,86 @@
+{
+  "items": [
+    {
+      "mapping_change_id": 1,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000753",
+      "previous_status": "unresolved",
+      "previous_proposed_code": null,
+      "new_status": "mapped_to_prototype",
+      "new_proposed_code": "SMV-P-B0CE172DAB9E",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 local demo approval using displayed matching pipe evidence",
+      "decision_id": 1,
+      "created_at": "2026-09-29T21:12:34.724592Z"
+    },
+    {
+      "mapping_change_id": 2,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000925",
+      "previous_status": "unresolved",
+      "previous_proposed_code": null,
+      "new_status": "mapped_to_prototype",
+      "new_proposed_code": "SMV-P-B0CE172DAB9E",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 local demo approval using displayed matching pipe evidence",
+      "decision_id": 1,
+      "created_at": "2026-09-29T21:12:34.724592Z"
+    },
+    {
+      "mapping_change_id": 3,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000753",
+      "previous_status": "mapped_to_prototype",
+      "previous_proposed_code": "SMV-P-B0CE172DAB9E",
+      "new_status": "unresolved",
+      "new_proposed_code": null,
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo of reversible governance history",
+      "decision_id": 2,
+      "created_at": "2026-09-29T21:12:34.753843Z"
+    },
+    {
+      "mapping_change_id": 4,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000925",
+      "previous_status": "mapped_to_prototype",
+      "previous_proposed_code": "SMV-P-B0CE172DAB9E",
+      "new_status": "unresolved",
+      "new_proposed_code": null,
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo of reversible governance history",
+      "decision_id": 2,
+      "created_at": "2026-09-29T21:12:34.753843Z"
+    },
+    {
+      "mapping_change_id": 5,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000753",
+      "previous_status": "unresolved",
+      "previous_proposed_code": null,
+      "new_status": "mapped_to_prototype",
+      "new_proposed_code": "SMV-P-B0CE172DAB9E",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo restores the supported prototype mapping",
+      "decision_id": 3,
+      "created_at": "2026-09-29T21:12:34.779402Z"
+    },
+    {
+      "mapping_change_id": 6,
+      "workspace_id": "phase13-demo",
+      "source_record_id": "M000925",
+      "previous_status": "unresolved",
+      "previous_proposed_code": null,
+      "new_status": "mapped_to_prototype",
+      "new_proposed_code": "SMV-P-B0CE172DAB9E",
+      "actor": "phase13-local-owner",
+      "reason": "Phase 13 demo restores the supported prototype mapping",
+      "decision_id": 3,
+      "created_at": "2026-09-29T21:12:34.779402Z"
+    }
+  ],
+  "offset": 0,
+  "limit": 20,
+  "total": 6,
+  "next_offset": null
+}

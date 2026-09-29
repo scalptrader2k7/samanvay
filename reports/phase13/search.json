@@ -1,0 +1,221 @@
+{
+  "items": [
+    {
+      "attribute_parser_version": "technical-attributes-v0.1",
+      "attributes": {
+        "material_grade": [],
+        "model_part": [],
+        "pressure": [],
+        "size_dimension": [
+          {
+            "end": 23,
+            "rule_id": "size.metric",
+            "start": 17,
+            "value_normalized": "9.53MM",
+            "value_raw": "9.53MM"
+          },
+          {
+            "end": 31,
+            "rule_id": "size.metric",
+            "start": 24,
+            "value_normalized": "141.3MM",
+            "value_raw": "141.3MM"
+          },
+          {
+            "end": 37,
+            "rule_id": "size.nominal",
+            "start": 32,
+            "value_normalized": "125NB",
+            "value_raw": "125NB"
+          }
+        ],
+        "standard": [
+          {
+            "end": 16,
+            "rule_id": "standard.astm",
+            "start": 7,
+            "value_normalized": "ASTM A312",
+            "value_raw": "ASTM A312"
+          }
+        ],
+        "voltage": []
+      },
+      "category_original": null,
+      "derivation_issues": [],
+      "description_normalized": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+      "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+      "document_reference": null,
+      "eligible_for_processing": true,
+      "family": "pipe",
+      "family_evidence": {
+        "end": 6,
+        "rule_id": "family.pipe.explicit",
+        "start": 2,
+        "value_normalized": "pipe",
+        "value_raw": "PIPE"
+      },
+      "field_origins": {
+        "category_original": {
+          "kind": "column",
+          "name": "product_category"
+        },
+        "description_original": {
+          "kind": "column",
+          "name": "description"
+        },
+        "document_reference": {
+          "kind": "column",
+          "name": "document_url"
+        },
+        "legacy_material_code": {
+          "kind": "unmapped"
+        },
+        "quantity_original": {
+          "kind": "column",
+          "name": "quantity"
+        },
+        "source_identifiers": {
+          "corpus_id": {
+            "kind": "column",
+            "name": "corpus_id"
+          },
+          "tender_id": {
+            "kind": "column",
+            "name": "tender_id"
+          },
+          "tender_reference": {
+            "kind": "column",
+            "name": "tender_reference"
+          }
+        },
+        "source_organization": {
+          "kind": "column",
+          "name": "organization"
+        },
+        "source_record_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "source_section": {
+          "kind": "unmapped"
+        },
+        "source_system": {
+          "kind": "unmapped"
+        },
+        "source_url": {
+          "kind": "column",
+          "name": "source_url"
+        },
+        "specifications_original": {
+          "kind": "unmapped"
+        },
+        "uom_original": {
+          "kind": "column",
+          "name": "unit"
+        }
+      },
+      "issues": [
+        {
+          "field": "uom_original",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "category_original",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "source_system",
+          "reason": "unmapped",
+          "severity": "warning"
+        },
+        {
+          "field": "source_section",
+          "reason": "unmapped",
+          "severity": "warning"
+        },
+        {
+          "field": "source_url",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "document_reference",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "quantity_original",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "legacy_material_code",
+          "reason": "unmapped",
+          "severity": "warning"
+        },
+        {
+          "field": "source_identifiers.tender_reference",
+          "reason": "blank",
+          "severity": "warning"
+        },
+        {
+          "field": "specifications_original",
+          "reason": "unmapped",
+          "severity": "warning"
+        }
+      ],
+      "legacy_material_code": null,
+      "mapping_id": "material-candidates-v0.1",
+      "normalization_version": "description-normalization-v0.1",
+      "quantity_original": null,
+      "raw_fields": {
+        "classification_reason": "Rule 4a: Extracted Document Specification Sentence/String",
+        "corpus_id": "M000753",
+        "description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+        "description_kind": "doc_spec_sentence",
+        "document_url": "",
+        "has_any_technical_details": "True",
+        "has_engineering_standard": "True",
+        "has_material_grade": "True",
+        "has_model_or_catalog_number": "False",
+        "has_pressure_class_or_rating": "False",
+        "has_size_or_dimension": "True",
+        "has_voltage_or_electrical_rating": "False",
+        "item_type_hint": "pipe",
+        "location": "",
+        "major_item_category": "Pipes, Tubes & Casings",
+        "organization": "NTPC Limited",
+        "product_category": "",
+        "provisional_status": "provisional_material_candidate",
+        "quantity": "",
+        "source_url": "",
+        "tender_id": "28971",
+        "tender_reference": "",
+        "unit": ""
+      },
+      "schema_version": "0.1",
+      "source_file": "data/processed/material_candidates.csv",
+      "source_identifiers": {
+        "corpus_id": "M000753",
+        "tender_id": "28971",
+        "tender_reference": ""
+      },
+      "source_organization": "NTPC Limited",
+      "source_record_id": "M000753",
+      "source_row": 600,
+      "source_section": null,
+      "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+      "source_sheet": null,
+      "source_system": null,
+      "source_url": null,
+      "specifications_original": {},
+      "uom_original": null
+    }
+  ],
+  "offset": 0,
+  "limit": 10,
+  "total": 1,
+  "next_offset": null
+}

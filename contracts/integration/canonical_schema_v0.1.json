@@ -1,0 +1,133 @@
+{
+  "contract_version": "samanvay-common-input-v0.1",
+  "integration_version": "samanvay-integration-v0.1",
+  "missing_policy": "Unmapped or blank optional values remain null/unknown with issues; they are never inferred.",
+  "fields": [
+    {
+      "name": "source_organization",
+      "required_for_matching_workflow": true,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Exact organization name; no inference."
+    },
+    {
+      "name": "source_record_id",
+      "required_for_matching_workflow": true,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Stable source-system row identifier; never presented as an official material code."
+    },
+    {
+      "name": "description_original",
+      "required_for_matching_workflow": true,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Verbatim material description."
+    },
+    {
+      "name": "uom_original",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Verbatim unit of measure."
+    },
+    {
+      "name": "category_original",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Verbatim category."
+    },
+    {
+      "name": "legacy_material_code",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Only a genuine supplied CPSE or legacy material code."
+    },
+    {
+      "name": "source_system",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Supplying system name."
+    },
+    {
+      "name": "source_section",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Source section or plant when explicitly mapped."
+    },
+    {
+      "name": "source_url",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Source URL."
+    },
+    {
+      "name": "document_reference",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Source document reference."
+    },
+    {
+      "name": "quantity_original",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "string_or_null",
+      "rule": "Verbatim quantity."
+    },
+    {
+      "name": "source_identifiers",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "object",
+      "rule": "Mapped identifier columns retained as key/value evidence."
+    },
+    {
+      "name": "specifications_original",
+      "required_for_matching_workflow": false,
+      "origin": "source",
+      "type": "object",
+      "rule": "Mapped specification columns retained verbatim without interpretation."
+    },
+    {
+      "name": "raw_fields",
+      "required_for_matching_workflow": true,
+      "origin": "source",
+      "type": "object",
+      "rule": "Every source column and exact text value."
+    },
+    {
+      "name": "field_origins",
+      "required_for_matching_workflow": true,
+      "origin": "source",
+      "type": "object",
+      "rule": "Source column or constant evidence for every mapped field."
+    },
+    {
+      "name": "description_normalized",
+      "required_for_matching_workflow": false,
+      "origin": "derived",
+      "type": "string_or_null",
+      "rule": "Existing Phase 3 normalization."
+    },
+    {
+      "name": "family",
+      "required_for_matching_workflow": false,
+      "origin": "derived",
+      "type": "string_or_null",
+      "rule": "Existing Phase 3 supported family rule."
+    },
+    {
+      "name": "attributes",
+      "required_for_matching_workflow": false,
+      "origin": "derived",
+      "type": "object",
+      "rule": "Existing Phase 3 extracted attributes with source spans."
+    }
+  ]
+}
