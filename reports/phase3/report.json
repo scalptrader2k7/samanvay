@@ -1,0 +1,45 @@
+{
+  "phase": "3",
+  "status": "complete",
+  "input_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+  "input_rows": 9245,
+  "output_rows": 9245,
+  "dropped_rows": 0,
+  "source_ids_preserved": true,
+  "original_descriptions_preserved": true,
+  "family_counts": {
+    "cable": 266,
+    "pipe": 1172,
+    "pump": 505,
+    "unknown": 6906,
+    "valve": 396
+  },
+  "attribute_record_coverage": {
+    "size_dimension": 1539,
+    "material_grade": 166,
+    "standard": 378,
+    "pressure": 206,
+    "voltage": 283,
+    "model_part": 63
+  },
+  "example_ids": [
+    "M000041",
+    "M000114",
+    "M000342",
+    "M000753",
+    "M000830",
+    "M000913",
+    "M000921",
+    "M003626",
+    "M010407",
+    "M015553"
+  ],
+  "limitations": [
+    "Coverage counts are rule outputs, not extraction accuracy.",
+    "No human-labeled attribute gold set is available.",
+    "Unknown and ambiguous values remain unfilled.",
+    "Rules are intentionally narrow and do not convert units or expand abbreviations.",
+    "Family/attributes are derived evidence, not source master data.",
+    "No candidate matching or equivalence decision is performed."
+  ]
+}

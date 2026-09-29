@@ -1,0 +1,18 @@
+{
+  "mapping_id": "raw-ntpc-v0.1",
+  "columns": {
+    "description_original": "item_text",
+    "uom_original": "unit",
+    "document_reference": "doc_name",
+    "quantity_original": "quantity"
+  },
+  "identifiers": [
+    "nit_id",
+    "doc_name",
+    "line_no"
+  ],
+  "organization_constant": {
+    "value": "NTPC Limited",
+    "evidence": "SOURCES.md section 2.2"
+  }
+}

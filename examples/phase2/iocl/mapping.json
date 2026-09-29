@@ -1,0 +1,19 @@
+{
+  "mapping_id": "raw-iocl-v0.1",
+  "columns": {
+    "description_original": "item_description",
+    "uom_original": "unit",
+    "source_section": "section",
+    "document_reference": "source_pdf",
+    "quantity_original": "quantity"
+  },
+  "identifiers": [
+    "source_pdf",
+    "page",
+    "sl_no"
+  ],
+  "organization_constant": {
+    "value": "Indian Oil Corporation Limited",
+    "evidence": "SOURCES.md section 2.3"
+  }
+}

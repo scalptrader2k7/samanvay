@@ -1,0 +1,39 @@
+{
+  "inputs": {
+    "corpus": {
+      "source_file": "data/raw/huggingface/material_description_corpus.csv",
+      "source_sha256": "58c837ff0dab3336085bc6e7e984d7ed060b175a7df7440ba3dc037d7f107c95",
+      "rows": 21513,
+      "eligible_rows": 21513,
+      "ineligible_rows": 0,
+      "sample_rows": 5
+    },
+    "ntpc": {
+      "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+      "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+      "rows": 486,
+      "eligible_rows": 486,
+      "ineligible_rows": 0,
+      "sample_rows": 5
+    },
+    "iocl": {
+      "source_file": "data/raw/huggingface/iocl_procurement_plan_items.csv",
+      "source_sha256": "6c132ca99a3181427300f77f73558e501aebba52ae4085af657781a4fe58ae17",
+      "rows": 1224,
+      "eligible_rows": 1224,
+      "ineligible_rows": 0,
+      "sample_rows": 5
+    },
+    "candidates": {
+      "source_file": "data/processed/material_candidates.csv",
+      "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+      "rows": 9245,
+      "eligible_rows": 9245,
+      "ineligible_rows": 0,
+      "sample_rows": 5
+    }
+  },
+  "raw_input_rows": 23223,
+  "candidate_subset_rows": 9245,
+  "note": "Counts are per-file rows, not unique materials. Candidate rows are a corpus subset."
+}

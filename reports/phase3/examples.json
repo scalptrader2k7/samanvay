@@ -1,0 +1,1951 @@
+[
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 35,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000041",
+      "organization": "Indian Oil Corporation Limited",
+      "description": "API 610 Centrifugal Pump",
+      "source_url": "",
+      "document_url": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+      "tender_reference": "",
+      "tender_id": "",
+      "description_kind": "procurement_plan_item",
+      "item_type_hint": "pump",
+      "quantity": "4",
+      "unit": "No.",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Pumps & Pumping Systems",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "True",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 4c: Procurement Plan Physical Material Item",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Indian Oil Corporation Limited",
+    "source_record_id": "M000041",
+    "description_original": "API 610 Centrifugal Pump",
+    "uom_original": "No.",
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+    "quantity_original": "4",
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000041",
+      "tender_reference": "",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "API 610 Centrifugal Pump",
+    "family": "pump",
+    "family_evidence": {
+      "value_raw": "Pump",
+      "value_normalized": "pump",
+      "start": 20,
+      "end": 24,
+      "rule_id": "family.pump.explicit"
+    },
+    "attributes": {
+      "size_dimension": [],
+      "material_grade": [],
+      "standard": [
+        {
+          "value_raw": "API 610",
+          "value_normalized": "API 610",
+          "start": 0,
+          "end": 7,
+          "rule_id": "standard.api"
+        }
+      ],
+      "pressure": [],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 108,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000114",
+      "organization": "Indian Oil Corporation Limited",
+      "description": "Centrifugal Pump",
+      "source_url": "",
+      "document_url": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+      "tender_reference": "",
+      "tender_id": "",
+      "description_kind": "procurement_plan_item",
+      "item_type_hint": "pump",
+      "quantity": "159",
+      "unit": "EA",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Pumps & Pumping Systems",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "False",
+      "classification_reason": "Rule 4c: Procurement Plan Physical Material Item",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Indian Oil Corporation Limited",
+    "source_record_id": "M000114",
+    "description_original": "Centrifugal Pump",
+    "uom_original": "EA",
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+    "quantity_original": "159",
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000114",
+      "tender_reference": "",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "Centrifugal Pump",
+    "family": "pump",
+    "family_evidence": {
+      "value_raw": "Pump",
+      "value_normalized": "pump",
+      "start": 12,
+      "end": 16,
+      "rule_id": "family.pump.explicit"
+    },
+    "attributes": {
+      "size_dimension": [],
+      "material_grade": [],
+      "standard": [],
+      "pressure": [],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 334,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000342",
+      "organization": "Indian Oil Corporation Limited",
+      "description": "Other pilot plant spares like spares of pumps, compressors, heaters, valves, tubing, etc",
+      "source_url": "",
+      "document_url": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+      "tender_reference": "",
+      "tender_id": "",
+      "description_kind": "procurement_plan_item",
+      "item_type_hint": "valve",
+      "quantity": "1",
+      "unit": "lot",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Valves & Actuators",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "False",
+      "classification_reason": "Rule 4c: Procurement Plan Physical Material Item",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Indian Oil Corporation Limited",
+    "source_record_id": "M000342",
+    "description_original": "Other pilot plant spares like spares of pumps, compressors, heaters, valves, tubing, etc",
+    "uom_original": "lot",
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": "data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf",
+    "quantity_original": "1",
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000342",
+      "tender_reference": "",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "Other pilot plant spares like spares of pumps, compressors, heaters, valves, tubing, etc",
+    "family": null,
+    "family_evidence": null,
+    "attributes": {
+      "size_dimension": [],
+      "material_grade": [],
+      "standard": [],
+      "pressure": [],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [
+      {
+        "reason": "ambiguous_family",
+        "families": [
+          "pipe",
+          "valve",
+          "pump"
+        ],
+        "evidence": [
+          {
+            "value_raw": "tubing",
+            "value_normalized": "pipe",
+            "start": 77,
+            "end": 83,
+            "rule_id": "family.pipe.explicit"
+          },
+          {
+            "value_raw": "valves",
+            "value_normalized": "valve",
+            "start": 69,
+            "end": 75,
+            "rule_id": "family.valve.explicit"
+          },
+          {
+            "value_raw": "pumps",
+            "value_normalized": "pump",
+            "start": 40,
+            "end": 45,
+            "rule_id": "family.pump.explicit"
+          }
+        ]
+      }
+    ],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 600,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000753",
+      "organization": "NTPC Limited",
+      "description": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+      "source_url": "",
+      "document_url": "",
+      "tender_reference": "",
+      "tender_id": "28971",
+      "description_kind": "doc_spec_sentence",
+      "item_type_hint": "pipe",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Pipes, Tubes & Casings",
+      "has_size_or_dimension": "True",
+      "has_material_grade": "True",
+      "has_engineering_standard": "True",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 4a: Extracted Document Specification Sentence/String",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "NTPC Limited",
+    "source_record_id": "M000753",
+    "description_original": ", PIPE ASTM A312,9.53MM,141.3MM,125NB ,",
+    "uom_original": null,
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000753",
+      "tender_reference": "",
+      "tender_id": "28971"
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": ", PIPE ASTM A312, 9.53MM, 141.3MM, 125NB, ",
+    "family": "pipe",
+    "family_evidence": {
+      "value_raw": "PIPE",
+      "value_normalized": "pipe",
+      "start": 2,
+      "end": 6,
+      "rule_id": "family.pipe.explicit"
+    },
+    "attributes": {
+      "size_dimension": [
+        {
+          "value_raw": "9.53MM",
+          "value_normalized": "9.53MM",
+          "start": 17,
+          "end": 23,
+          "rule_id": "size.metric"
+        },
+        {
+          "value_raw": "141.3MM",
+          "value_normalized": "141.3MM",
+          "start": 24,
+          "end": 31,
+          "rule_id": "size.metric"
+        },
+        {
+          "value_raw": "125NB",
+          "value_normalized": "125NB",
+          "start": 32,
+          "end": 37,
+          "rule_id": "size.nominal"
+        }
+      ],
+      "material_grade": [],
+      "standard": [
+        {
+          "value_raw": "ASTM A312",
+          "value_normalized": "ASTM A312",
+          "start": 7,
+          "end": 16,
+          "rule_id": "standard.astm"
+        }
+      ],
+      "pressure": [],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 676,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000830",
+      "organization": "NTPC Limited",
+      "description": "CABLE, PWR, 150MM2, 1C, STRANDED, AL, 11KV",
+      "source_url": "",
+      "document_url": "",
+      "tender_reference": "",
+      "tender_id": "28886",
+      "description_kind": "doc_spec_sentence",
+      "item_type_hint": "cable",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Electrical, Cables & Switchgear",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "True",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 4a: Extracted Document Specification Sentence/String",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "NTPC Limited",
+    "source_record_id": "M000830",
+    "description_original": "CABLE, PWR, 150MM2, 1C, STRANDED, AL, 11KV",
+    "uom_original": null,
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000830",
+      "tender_reference": "",
+      "tender_id": "28886"
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "CABLE, PWR, 150MM2, 1C, STRANDED, AL, 11KV",
+    "family": "cable",
+    "family_evidence": {
+      "value_raw": "CABLE",
+      "value_normalized": "cable",
+      "start": 0,
+      "end": 5,
+      "rule_id": "family.cable.explicit"
+    },
+    "attributes": {
+      "size_dimension": [
+        {
+          "value_raw": "150MM2",
+          "value_normalized": "150MM2",
+          "start": 12,
+          "end": 18,
+          "rule_id": "size.metric"
+        }
+      ],
+      "material_grade": [],
+      "standard": [],
+      "pressure": [],
+      "voltage": [
+        {
+          "value_raw": "11KV",
+          "value_normalized": "11KV",
+          "start": 38,
+          "end": 42,
+          "rule_id": "voltage.explicit"
+        }
+      ],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 753,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000913",
+      "organization": "NTPC Limited",
+      "description": "PIPE SEAMLESS,SS,A312-TP304L,80S,15MM",
+      "source_url": "",
+      "document_url": "",
+      "tender_reference": "",
+      "tender_id": "28971",
+      "description_kind": "doc_spec_sentence",
+      "item_type_hint": "pipe",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Pipes, Tubes & Casings",
+      "has_size_or_dimension": "True",
+      "has_material_grade": "True",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 4a: Extracted Document Specification Sentence/String",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "NTPC Limited",
+    "source_record_id": "M000913",
+    "description_original": "PIPE SEAMLESS,SS,A312-TP304L,80S,15MM",
+    "uom_original": null,
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000913",
+      "tender_reference": "",
+      "tender_id": "28971"
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "PIPE SEAMLESS, SS, A312-TP304L, 80S, 15MM",
+    "family": "pipe",
+    "family_evidence": {
+      "value_raw": "PIPE",
+      "value_normalized": "pipe",
+      "start": 0,
+      "end": 4,
+      "rule_id": "family.pipe.explicit"
+    },
+    "attributes": {
+      "size_dimension": [
+        {
+          "value_raw": "80S",
+          "value_normalized": "80S",
+          "start": 29,
+          "end": 32,
+          "rule_id": "size.schedule"
+        },
+        {
+          "value_raw": "15MM",
+          "value_normalized": "15MM",
+          "start": 33,
+          "end": 37,
+          "rule_id": "size.metric"
+        }
+      ],
+      "material_grade": [
+        {
+          "value_raw": "A312-TP304L",
+          "value_normalized": "A312-TP304L",
+          "start": 17,
+          "end": 28,
+          "rule_id": "grade.designation"
+        },
+        {
+          "value_raw": "TP304L",
+          "value_normalized": "TP304L",
+          "start": 22,
+          "end": 28,
+          "rule_id": "grade.stainless"
+        }
+      ],
+      "standard": [],
+      "pressure": [],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 761,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M000921",
+      "organization": "NTPC Limited",
+      "description": "PUMP/ FAN/ COMPRESSOR UPTO 6.6KV 750KW",
+      "source_url": "",
+      "document_url": "",
+      "tender_reference": "",
+      "tender_id": "28868",
+      "description_kind": "doc_spec_sentence",
+      "item_type_hint": "pump",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "",
+      "major_item_category": "Pumps & Pumping Systems",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "True",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 4a: Extracted Document Specification Sentence/String",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_url",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "NTPC Limited",
+    "source_record_id": "M000921",
+    "description_original": "PUMP/ FAN/ COMPRESSOR UPTO 6.6KV 750KW",
+    "uom_original": null,
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": null,
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M000921",
+      "tender_reference": "",
+      "tender_id": "28868"
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "PUMP/ FAN/ COMPRESSOR UPTO 6.6KV 750KW",
+    "family": "pump",
+    "family_evidence": {
+      "value_raw": "PUMP",
+      "value_normalized": "pump",
+      "start": 0,
+      "end": 4,
+      "rule_id": "family.pump.explicit"
+    },
+    "attributes": {
+      "size_dimension": [],
+      "material_grade": [],
+      "standard": [],
+      "pressure": [],
+      "voltage": [
+        {
+          "value_raw": "6.6KV",
+          "value_normalized": "6.6KV",
+          "start": 27,
+          "end": 32,
+          "rule_id": "voltage.explicit"
+        }
+      ],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 1961,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M003626",
+      "organization": "Oil India Limited",
+      "description": "Gate Valve, 2.1/16 inch x 5000 PSI, API 6A",
+      "source_url": "https://www.oil-india.com/tender-details/124?in_detail=N1U2dw==",
+      "document_url": "",
+      "tender_reference": "GEM/2024/B/5039020",
+      "tender_id": "",
+      "description_kind": "archived_tender",
+      "item_type_hint": "gate valve",
+      "quantity": "",
+      "unit": "",
+      "location": "Jaisalmer",
+      "product_category": "",
+      "major_item_category": "Valves & Actuators",
+      "has_size_or_dimension": "True",
+      "has_material_grade": "False",
+      "has_engineering_standard": "True",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "True",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 5: Recognized Item Type Hint",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "category_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Oil India Limited",
+    "source_record_id": "M003626",
+    "description_original": "Gate Valve, 2.1/16 inch x 5000 PSI, API 6A",
+    "uom_original": null,
+    "category_original": null,
+    "source_system": null,
+    "source_section": null,
+    "source_url": "https://www.oil-india.com/tender-details/124?in_detail=N1U2dw==",
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M003626",
+      "tender_reference": "GEM/2024/B/5039020",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "Gate Valve, 2.1/16 inch x 5000 PSI, API 6A",
+    "family": "valve",
+    "family_evidence": {
+      "value_raw": "Valve",
+      "value_normalized": "valve",
+      "start": 5,
+      "end": 10,
+      "rule_id": "family.valve.explicit"
+    },
+    "attributes": {
+      "size_dimension": [
+        {
+          "value_raw": "2.1/16 inch",
+          "value_normalized": "2.1/16 INCH",
+          "start": 12,
+          "end": 23,
+          "rule_id": "size.inch"
+        }
+      ],
+      "material_grade": [],
+      "standard": [
+        {
+          "value_raw": "API 6A",
+          "value_normalized": "API 6A",
+          "start": 36,
+          "end": 42,
+          "rule_id": "standard.api"
+        }
+      ],
+      "pressure": [
+        {
+          "value_raw": "5000 PSI",
+          "value_normalized": "5000 PSI",
+          "start": 26,
+          "end": 34,
+          "rule_id": "pressure.unit"
+        }
+      ],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 4803,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M010407",
+      "organization": "Oil India Limited",
+      "description": "Gate Valve, 2\" x 300 Class, API 6D",
+      "source_url": "https://www.oil-india.com/old-tender?page=695&op=",
+      "document_url": "",
+      "tender_reference": "SDG9361P19/07",
+      "tender_id": "",
+      "description_kind": "historical_tender",
+      "item_type_hint": "gate valve",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "Global",
+      "major_item_category": "Valves & Actuators",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "True",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "False",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 5: Recognized Item Type Hint",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Oil India Limited",
+    "source_record_id": "M010407",
+    "description_original": "Gate Valve, 2\" x 300 Class, API 6D",
+    "uom_original": null,
+    "category_original": "Global",
+    "source_system": null,
+    "source_section": null,
+    "source_url": "https://www.oil-india.com/old-tender?page=695&op=",
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M010407",
+      "tender_reference": "SDG9361P19/07",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "Gate Valve, 2\" x 300 Class, API 6D",
+    "family": "valve",
+    "family_evidence": {
+      "value_raw": "Valve",
+      "value_normalized": "valve",
+      "start": 5,
+      "end": 10,
+      "rule_id": "family.valve.explicit"
+    },
+    "attributes": {
+      "size_dimension": [
+        {
+          "value_raw": "2\"",
+          "value_normalized": "2\"",
+          "start": 12,
+          "end": 14,
+          "rule_id": "size.inch"
+        }
+      ],
+      "material_grade": [],
+      "standard": [
+        {
+          "value_raw": "API 6D",
+          "value_normalized": "API 6D",
+          "start": 28,
+          "end": 34,
+          "rule_id": "standard.api"
+        }
+      ],
+      "pressure": [
+        {
+          "value_raw": "300 Class",
+          "value_normalized": "300 CLASS",
+          "start": 17,
+          "end": 26,
+          "rule_id": "pressure.class.reversed"
+        }
+      ],
+      "voltage": [],
+      "model_part": []
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  },
+  {
+    "schema_version": "0.1",
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 6329,
+    "mapping_id": "material-candidates-v0.1",
+    "raw_fields": {
+      "corpus_id": "M015553",
+      "organization": "Oil India Limited",
+      "description": "SPARES FOR NATIONAL OILWELL MUD PUMP MODEL NAT 12 P 160",
+      "source_url": "https://www.oil-india.com/old-tender?page=531&op=",
+      "document_url": "",
+      "tender_reference": "SSG3833L20/05",
+      "tender_id": "",
+      "description_kind": "historical_tender",
+      "item_type_hint": "pump",
+      "quantity": "",
+      "unit": "",
+      "location": "",
+      "product_category": "Limited",
+      "major_item_category": "Pumps & Pumping Systems",
+      "has_size_or_dimension": "False",
+      "has_material_grade": "False",
+      "has_engineering_standard": "False",
+      "has_voltage_or_electrical_rating": "False",
+      "has_pressure_class_or_rating": "False",
+      "has_model_or_catalog_number": "True",
+      "has_any_technical_details": "True",
+      "classification_reason": "Rule 5: Recognized Item Type Hint",
+      "provisional_status": "provisional_material_candidate"
+    },
+    "field_origins": {
+      "source_organization": {
+        "kind": "column",
+        "name": "organization"
+      },
+      "source_record_id": {
+        "kind": "column",
+        "name": "corpus_id"
+      },
+      "description_original": {
+        "kind": "column",
+        "name": "description"
+      },
+      "uom_original": {
+        "kind": "column",
+        "name": "unit"
+      },
+      "category_original": {
+        "kind": "column",
+        "name": "product_category"
+      },
+      "source_system": {
+        "kind": "unmapped"
+      },
+      "source_section": {
+        "kind": "unmapped"
+      },
+      "source_url": {
+        "kind": "column",
+        "name": "source_url"
+      },
+      "document_reference": {
+        "kind": "column",
+        "name": "document_url"
+      },
+      "quantity_original": {
+        "kind": "column",
+        "name": "quantity"
+      },
+      "legacy_material_code": {
+        "kind": "unmapped"
+      },
+      "source_identifiers": {
+        "corpus_id": {
+          "kind": "column",
+          "name": "corpus_id"
+        },
+        "tender_reference": {
+          "kind": "column",
+          "name": "tender_reference"
+        },
+        "tender_id": {
+          "kind": "column",
+          "name": "tender_id"
+        }
+      },
+      "specifications_original": {
+        "kind": "unmapped"
+      }
+    },
+    "issues": [
+      {
+        "field": "uom_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "source_system",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_section",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "document_reference",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "quantity_original",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "legacy_material_code",
+        "reason": "unmapped",
+        "severity": "warning"
+      },
+      {
+        "field": "source_identifiers.tender_id",
+        "reason": "blank",
+        "severity": "warning"
+      },
+      {
+        "field": "specifications_original",
+        "reason": "unmapped",
+        "severity": "warning"
+      }
+    ],
+    "source_organization": "Oil India Limited",
+    "source_record_id": "M015553",
+    "description_original": "SPARES FOR NATIONAL OILWELL MUD PUMP MODEL NAT 12 P 160",
+    "uom_original": null,
+    "category_original": "Limited",
+    "source_system": null,
+    "source_section": null,
+    "source_url": "https://www.oil-india.com/old-tender?page=531&op=",
+    "document_reference": null,
+    "quantity_original": null,
+    "legacy_material_code": null,
+    "source_identifiers": {
+      "corpus_id": "M015553",
+      "tender_reference": "SSG3833L20/05",
+      "tender_id": ""
+    },
+    "specifications_original": {},
+    "eligible_for_processing": true,
+    "normalization_version": "description-normalization-v0.1",
+    "description_normalized": "SPARES FOR NATIONAL OILWELL MUD PUMP MODEL NAT 12 P 160",
+    "family": "pump",
+    "family_evidence": {
+      "value_raw": "PUMP",
+      "value_normalized": "pump",
+      "start": 32,
+      "end": 36,
+      "rule_id": "family.pump.explicit"
+    },
+    "attributes": {
+      "size_dimension": [],
+      "material_grade": [],
+      "standard": [],
+      "pressure": [],
+      "voltage": [],
+      "model_part": [
+        {
+          "value_raw": "MODEL NAT 12 P 160",
+          "value_normalized": "MODEL NAT 12 P 160",
+          "start": 37,
+          "end": 55,
+          "rule_id": "model.explicit"
+        }
+      ]
+    },
+    "derivation_issues": [],
+    "attribute_parser_version": "technical-attributes-v0.1"
+  }
+]

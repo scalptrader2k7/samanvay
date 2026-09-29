@@ -1,0 +1,67 @@
+[
+  {
+    "sample_row": 1,
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 1,
+    "source_record_id": "M000001",
+    "source_identifiers": {
+      "corpus_id": "M000001",
+      "tender_reference": "",
+      "tender_id": ""
+    }
+  },
+  {
+    "sample_row": 2,
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 2,
+    "source_record_id": "M000002",
+    "source_identifiers": {
+      "corpus_id": "M000002",
+      "tender_reference": "",
+      "tender_id": ""
+    }
+  },
+  {
+    "sample_row": 3,
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 3,
+    "source_record_id": "M000003",
+    "source_identifiers": {
+      "corpus_id": "M000003",
+      "tender_reference": "",
+      "tender_id": ""
+    }
+  },
+  {
+    "sample_row": 4,
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 4,
+    "source_record_id": "M000004",
+    "source_identifiers": {
+      "corpus_id": "M000004",
+      "tender_reference": "",
+      "tender_id": ""
+    }
+  },
+  {
+    "sample_row": 5,
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "source_row": 5,
+    "source_record_id": "M000005",
+    "source_identifiers": {
+      "corpus_id": "M000005",
+      "tender_reference": "",
+      "tender_id": ""
+    }
+  }
+]

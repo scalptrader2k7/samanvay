@@ -1,0 +1,67 @@
+[
+  {
+    "sample_row": 1,
+    "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+    "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "source_sheet": null,
+    "source_row": 1,
+    "source_record_id": null,
+    "source_identifiers": {
+      "nit_id": "28811",
+      "doc_name": "28811_NIT_Download.txt",
+      "line_no": "28"
+    }
+  },
+  {
+    "sample_row": 2,
+    "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+    "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "source_sheet": null,
+    "source_row": 2,
+    "source_record_id": null,
+    "source_identifiers": {
+      "nit_id": "28816",
+      "doc_name": "28816_cor_28816_1_1.txt",
+      "line_no": "8"
+    }
+  },
+  {
+    "sample_row": 3,
+    "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+    "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "source_sheet": null,
+    "source_row": 3,
+    "source_record_id": null,
+    "source_identifiers": {
+      "nit_id": "28860",
+      "doc_name": "28860_NIT_Download.txt",
+      "line_no": "186"
+    }
+  },
+  {
+    "sample_row": 4,
+    "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+    "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "source_sheet": null,
+    "source_row": 4,
+    "source_record_id": null,
+    "source_identifiers": {
+      "nit_id": "28868",
+      "doc_name": "28868_cor_28868_5_1.txt",
+      "line_no": "6624"
+    }
+  },
+  {
+    "sample_row": 5,
+    "source_file": "data/raw/huggingface/ntpc_material_items.csv",
+    "source_sha256": "a175d7783728e8cff7878b30dbcd401a41fcfe2e4d703d1fdccfe634951ff8bb",
+    "source_sheet": null,
+    "source_row": 5,
+    "source_record_id": null,
+    "source_identifiers": {
+      "nit_id": "28868",
+      "doc_name": "28868_cor_28868_5_1.txt",
+      "line_no": "6625"
+    }
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "name": "exact cross-organization pump",
+    "query": "M000114",
+    "target": "M008245",
+    "top_k": 10,
+    "found": true,
+    "rank": 1,
+    "diagnostic": {
+      "query_id": "M000114",
+      "selected_tokens": [
+        "centrifugal",
+        "pump"
+      ],
+      "postings_visited": 48,
+      "candidate_pool_size": 47,
+      "max_rare_tokens": 8,
+      "posting_cap": 250,
+      "pool_cap": 500,
+      "elapsed_ms": 0.14890002785250545,
+      "all_pairs_compared": false,
+      "fuzzy_comparisons": 47,
+      "returned": 10,
+      "top_k": 10,
+      "cross_organization_only": false,
+      "total_elapsed_ms": 0.7527999696321785
+    }
+  },
+  {
+    "name": "exact cross-organization cable",
+    "query": "M000165",
+    "target": "M017540",
+    "top_k": 10,
+    "found": true,
+    "rank": 1,
+    "diagnostic": {
+      "query_id": "M000165",
+      "selected_tokens": [
+        "cables",
+        "electrical"
+      ],
+      "postings_visited": 207,
+      "candidate_pool_size": 191,
+      "max_rare_tokens": 8,
+      "posting_cap": 250,
+      "pool_cap": 500,
+      "elapsed_ms": 0.17820001812651753,
+      "all_pairs_compared": false,
+      "fuzzy_comparisons": 191,
+      "returned": 10,
+      "top_k": 10,
+      "cross_organization_only": false,
+      "total_elapsed_ms": 2.001900051254779
+    }
+  },
+  {
+    "name": "near-format pipe",
+    "query": "M000753",
+    "target": "M000925",
+    "top_k": 20,
+    "found": true,
+    "rank": 1,
+    "diagnostic": {
+      "query_id": "M000753",
+      "selected_tokens": [
+        "141.3mm",
+        "9.53mm",
+        "125nb",
+        "a312",
+        "astm",
+        "pipe"
+      ],
+      "postings_visited": 33,
+      "candidate_pool_size": 43,
+      "max_rare_tokens": 8,
+      "posting_cap": 250,
+      "pool_cap": 500,
+      "elapsed_ms": 0.10720000136643648,
+      "all_pairs_compared": false,
+      "fuzzy_comparisons": 43,
+      "returned": 20,
+      "top_k": 20,
+      "cross_organization_only": false,
+      "total_elapsed_ms": 0.6797999958507717
+    }
+  },
+  {
+    "name": "different cable size proposal",
+    "query": "M000830",
+    "target": "M000834",
+    "top_k": 30,
+    "found": true,
+    "rank": 4,
+    "diagnostic": {
+      "query_id": "M000830",
+      "selected_tokens": [
+        "150mm2",
+        "1c",
+        "pwr",
+        "al",
+        "stranded",
+        "11kv",
+        "cable"
+      ],
+      "postings_visited": 274,
+      "candidate_pool_size": 213,
+      "max_rare_tokens": 8,
+      "posting_cap": 250,
+      "pool_cap": 500,
+      "elapsed_ms": 0.3122000489383936,
+      "all_pairs_compared": false,
+      "fuzzy_comparisons": 213,
+      "returned": 30,
+      "top_k": 30,
+      "cross_organization_only": false,
+      "total_elapsed_ms": 3.3380999811924994
+    }
+  },
+  {
+    "name": "different valve pressure proposal",
+    "query": "M010407",
+    "target": "M003626",
+    "top_k": 50,
+    "found": true,
+    "rank": 18,
+    "diagnostic": {
+      "query_id": "M010407",
+      "selected_tokens": [
+        "6d",
+        "300",
+        "class",
+        "gate",
+        "valve",
+        "api",
+        "2"
+      ],
+      "postings_visited": 363,
+      "candidate_pool_size": 326,
+      "max_rare_tokens": 8,
+      "posting_cap": 250,
+      "pool_cap": 500,
+      "elapsed_ms": 0.4112999886274338,
+      "all_pairs_compared": false,
+      "fuzzy_comparisons": 326,
+      "returned": 50,
+      "top_k": 50,
+      "cross_organization_only": false,
+      "total_elapsed_ms": 6.3025999697856605
+    }
+  }
+]

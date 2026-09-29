@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+# Reproducible full Phase 2 import packs (compact evidence is kept in reports/examples)
+/output/phase2/
+/output/phase3/
+/output/phase3-v0.1/
+/output/phase4-v0.1/
 __pycache__/
 *.py[cod]
 *$py.class

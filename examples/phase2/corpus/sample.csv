@@ -1,0 +1,6 @@
+corpus_id,organization,source_system,source_section,tender_reference,tender_id,description,description_kind,item_type_hint,quantity,unit,location,product_category,document_url,source_url
+M000001,Indian Oil Corporation Limited,iocl.com,Future Procurement Plan FY2025-26,,,1236/1231,procurement_plan_item,,1233,,,,data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf,
+M000002,Indian Oil Corporation Limited,iocl.com,Future Procurement Plan FY2025-26,,,14.2 Kg Cylinders (Including New & Replacement),procurement_plan_item,,,Nos.,,,data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf,
+M000003,Indian Oil Corporation Limited,iocl.com,Future Procurement Plan FY2025-26,,,1415/1417/1418,procurement_plan_item,,1415,,,,data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf,
+M000004,Indian Oil Corporation Limited,iocl.com,Future Procurement Plan FY2025-26,,,1507/1534,procurement_plan_item,,1551,,,,data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf,
+M000005,Indian Oil Corporation Limited,iocl.com,Future Procurement Plan FY2025-26,,,1599+3001/1543+460 1,procurement_plan_item,,1553,,,,data/raw/iocl/tenders/Future_Procurement_Plan25-26.pdf,

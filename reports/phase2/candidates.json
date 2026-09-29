@@ -1,0 +1,223 @@
+{
+  "schema_version": "0.1",
+  "source": {
+    "source_file": "data/processed/material_candidates.csv",
+    "source_sha256": "fe8ab7a62a752a6bd206a2db36ee8f290ab29042ded50ce6693d13bc0f8c22f6",
+    "source_sheet": null,
+    "header_row": null
+  },
+  "mapping_id": "material-candidates-v0.1",
+  "input_rows": 9245,
+  "output_records": 9245,
+  "dropped_rows": 0,
+  "eligible_rows": 9245,
+  "ineligible_rows": 0,
+  "rows_with_issues": 9245,
+  "repeated_description_rows_beyond_first": 1748,
+  "source_columns": [
+    "corpus_id",
+    "organization",
+    "description",
+    "source_url",
+    "document_url",
+    "tender_reference",
+    "tender_id",
+    "description_kind",
+    "item_type_hint",
+    "quantity",
+    "unit",
+    "location",
+    "product_category",
+    "major_item_category",
+    "has_size_or_dimension",
+    "has_material_grade",
+    "has_engineering_standard",
+    "has_voltage_or_electrical_rating",
+    "has_pressure_class_or_rating",
+    "has_model_or_catalog_number",
+    "has_any_technical_details",
+    "classification_reason",
+    "provisional_status"
+  ],
+  "fields": {
+    "source_organization": {
+      "origin": "column",
+      "source_column": "organization",
+      "column_present": true,
+      "populated_rows": 9245,
+      "missing_rows": 0
+    },
+    "source_record_id": {
+      "origin": "column",
+      "source_column": "corpus_id",
+      "column_present": true,
+      "populated_rows": 9245,
+      "missing_rows": 0
+    },
+    "description_original": {
+      "origin": "column",
+      "source_column": "description",
+      "column_present": true,
+      "populated_rows": 9245,
+      "missing_rows": 0
+    },
+    "uom_original": {
+      "origin": "column",
+      "source_column": "unit",
+      "column_present": true,
+      "populated_rows": 391,
+      "missing_rows": 8854
+    },
+    "category_original": {
+      "origin": "column",
+      "source_column": "product_category",
+      "column_present": true,
+      "populated_rows": 5082,
+      "missing_rows": 4163
+    },
+    "source_system": {
+      "origin": "unmapped",
+      "source_column": null,
+      "column_present": false,
+      "populated_rows": 0,
+      "missing_rows": 9245
+    },
+    "source_section": {
+      "origin": "unmapped",
+      "source_column": null,
+      "column_present": false,
+      "populated_rows": 0,
+      "missing_rows": 9245
+    },
+    "source_url": {
+      "origin": "column",
+      "source_column": "source_url",
+      "column_present": true,
+      "populated_rows": 8338,
+      "missing_rows": 907
+    },
+    "document_reference": {
+      "origin": "column",
+      "source_column": "document_url",
+      "column_present": true,
+      "populated_rows": 2131,
+      "missing_rows": 7114
+    },
+    "quantity_original": {
+      "origin": "column",
+      "source_column": "quantity",
+      "column_present": true,
+      "populated_rows": 474,
+      "missing_rows": 8771
+    },
+    "legacy_material_code": {
+      "origin": "unmapped",
+      "source_column": null,
+      "column_present": false,
+      "populated_rows": 0,
+      "missing_rows": 9245
+    },
+    "source_identifiers": {
+      "mapped_columns": [
+        "corpus_id",
+        "tender_reference",
+        "tender_id"
+      ],
+      "columns_present": [
+        "corpus_id",
+        "tender_reference",
+        "tender_id"
+      ],
+      "populated_rows": 9245,
+      "missing_rows": 0
+    },
+    "specifications_original": {
+      "mapped_columns": [],
+      "columns_present": [],
+      "populated_rows": 0,
+      "missing_rows": 9245
+    }
+  },
+  "issues": [
+    {
+      "field": "category_original",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 4163
+    },
+    {
+      "field": "document_reference",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 7114
+    },
+    {
+      "field": "legacy_material_code",
+      "reason": "unmapped",
+      "severity": "warning",
+      "count": 9245
+    },
+    {
+      "field": "quantity_original",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 8771
+    },
+    {
+      "field": "source_identifiers.tender_id",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 8261
+    },
+    {
+      "field": "source_identifiers.tender_reference",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 907
+    },
+    {
+      "field": "source_section",
+      "reason": "unmapped",
+      "severity": "warning",
+      "count": 9245
+    },
+    {
+      "field": "source_system",
+      "reason": "unmapped",
+      "severity": "warning",
+      "count": 9245
+    },
+    {
+      "field": "source_url",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 907
+    },
+    {
+      "field": "specifications_original",
+      "reason": "unmapped",
+      "severity": "warning",
+      "count": 9245
+    },
+    {
+      "field": "uom_original",
+      "reason": "blank",
+      "severity": "warning",
+      "count": 8854
+    }
+  ],
+  "readiness": {
+    "legacy_codes": "missing",
+    "specifications": "missing",
+    "transaction_history": "not_assessed_no_transaction_adapter",
+    "transaction_modules_enabled": false,
+    "human_validation": "not_assessed_by_ingestion"
+  },
+  "limitations": [
+    "Counts describe input rows, not unique materials or verified matches.",
+    "Overlapping sources and candidate subsets must not be summed as distinct materials.",
+    "No PR/PO/stock/issue history is mapped. Current public inputs do not provide it.",
+    "Planned quantities and estimated values do not establish consumption, prices paid or savings.",
+    "Human review and sponsor material-master validation remain separate from ingestion."
+  ]
+}

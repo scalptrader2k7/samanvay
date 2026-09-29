@@ -1,0 +1,18 @@
+{
+  "mapping_id": "material-candidates-v0.1",
+  "columns": {
+    "source_organization": "organization",
+    "source_record_id": "corpus_id",
+    "description_original": "description",
+    "uom_original": "unit",
+    "category_original": "product_category",
+    "source_url": "source_url",
+    "document_reference": "document_url",
+    "quantity_original": "quantity"
+  },
+  "identifiers": [
+    "corpus_id",
+    "tender_reference",
+    "tender_id"
+  ]
+}

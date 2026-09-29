@@ -1,0 +1,46 @@
+{
+  "phase": "4",
+  "status": "complete",
+  "retrieval_version": "lexical-retrieval-v0.1",
+  "input_sha256": "3bd32b39984fbc3606f93d10b689301e6529595350c5e98a2bdd2b16a6213023",
+  "query_records": 9245,
+  "output_query_records": 9245,
+  "top_k": 10,
+  "queries_with_candidates": 9155,
+  "runtime": {
+    "index_build_seconds": 0.490502,
+    "all_queries_seconds": 30.637253,
+    "queries_per_second": 301.757
+  },
+  "candidate_pool": {
+    "maximum": 500,
+    "mean": 189.111,
+    "p95": 474
+  },
+  "comparisons": {
+    "total_fuzzy": 1748329,
+    "maximum_per_query": 500,
+    "all_possible_directed_pairs": 85460780,
+    "all_pairs_compared": false
+  },
+  "latency_ms": {
+    "mean": 3.049,
+    "maximum": 134.8752
+  },
+  "example_coverage": {
+    "found": 5,
+    "total": 5,
+    "scope": "Predeclared diagnostic examples; not accuracy or recall."
+  },
+  "semantic_retrieval": {
+    "enabled": false,
+    "decision": "Not added: bounded lexical retrieval found every predeclared difficult/example target; no demonstrated incremental benefit on this non-gold suite."
+  },
+  "limitations": [
+    "No human-labeled retrieval gold set exists; example coverage is not accuracy or recall.",
+    "Public descriptions are surrogate procurement text and contain overlapping extraction stages.",
+    "Fuzzy scores are ranking signals, not match confidence or identity decisions.",
+    "Token posting/pool caps can miss candidates with no useful lexical overlap.",
+    "Phase 4 does not compare critical attributes, reject conflicts, merge records or assign codes."
+  ]
+}

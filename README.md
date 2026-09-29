@@ -1,5 +1,43 @@
 # SIH 26099: Phase 1 ? Dataset Foundation, Profiling & Curation
 
+Phase 1A-1C and Phase 2 are complete for the documented input contract. Phase 2
+supports fixed/configurable CSV mappings, the provisional candidate subset,
+text-cell XLSX uploads, readiness reports and traceable sample files.
+See [Phase 2 usage and checks](docs/phase2_usage.md) and
+[readiness evidence](reports/phase2/summary.json).
+Phase 3 is now complete for conservative description normalization and
+evidence-bearing technical attribute extraction. See the [Phase 3 checklist](PHASE3.md),
+[contract](docs/phase3_contract.md), [progress](docs/phase3_progress.md), and
+[real-example review](reports/phase3/review_examples.md).
+Phase 4 candidate retrieval is now complete with bounded exact, token and fuzzy
+retrieval. See the [Phase 4 checklist](PHASE4.md), [contract](docs/phase4_contract.md),
+[progress](docs/phase4_progress.md), and [diagnostic examples](reports/phase4/review_examples.md).
+Phase 5 has not started.
+See the [Phase 2 task list](PHASE2.md),
+[input format](docs/common_input_format.md) and [iteration log](docs/phase2_progress.md).
+
+From the repository root, use the loader in Python (returns records in memory;
+does not write files):
+
+```python
+from load_corpus import load_corpus_csv, load_ntpc_csv, load_iocl_csv
+
+records = load_corpus_csv(
+    "data/raw/huggingface/material_description_corpus.csv", import_root="."
+)
+ntpc_records = load_ntpc_csv(
+    "data/raw/huggingface/ntpc_material_items.csv", import_root="."
+)
+iocl_records = load_iocl_csv(
+    "data/raw/huggingface/iocl_procurement_plan_items.csv", import_root="."
+)
+```
+
+These examples use fixed source profiles; select the documented source explicitly.
+NTPC/IOCL organizations are provenance-backed profile constants. Structural errors raise `ValueError`;
+row-level issues remain attached to preserved records. Run its focused checks with
+`py -3.13 -m unittest discover -s tests -p '*loader*.py' -v`.
+
 This repository contains **Phase 1** of **SIH26099: AI-Driven Standardization & Harmonization of Material Codes Across CPSEs**.
 
 In accordance with Phase 1 scope requirements:
